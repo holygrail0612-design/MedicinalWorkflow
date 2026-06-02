@@ -1,0 +1,8272 @@
+{
+  "dcm": {
+    "name": "Anhydrous Dicholoromethane",
+    "cas": "75-09-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton Gloves (니트릴 즉시 투과됨)",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "비위험물",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Volatile",
+      "Suspected Carcinogen"
+    ],
+    "storage": "냉암소 보관. 환기 철저. 아민류 및 강염기와 혼합 금지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "thf": {
+    "name": "Tetrahydrofuran (THF)",
+    "cas": "109-99-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제4류 제1석유류 (수용성)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Peroxide Former",
+      "Irritant"
+    ],
+    "storage": "인화성 캐비닛. Ar/N2 치환 보관. 과산화물 생성 주의.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dmf": {
+    "name": "N,N-Dimethylformamide (DMF)",
+    "cas": "68-12-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Respirator(대량 취급 시)"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질(생식독성), 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제4류 제2석유류 (수용성)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Reprotoxic (생식독성)",
+      "Skin Absorption"
+    ],
+    "storage": "환기가 잘 되는 냉암소. 할로겐화물과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Triazole",
+        "Oxadiazole",
+        "Thioamide",
+        "Retro-amide"
+      ]
+    }
+  },
+  "etoac": {
+    "name": "Ethyl Acetate (EtOAc / EA)",
+    "cas": "141-78-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상",
+      "wiheom": "제4류 제1석유류 (비수용성)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장. 강산/강염기와 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "methanol": {
+    "name": "Methanol",
+    "cas": "67-56-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제4류 알코올류",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic (시신경 손상)",
+      "Skin Absorption"
+    ],
+    "storage": "인화성 보관장. 밀폐 및 잠금 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ethanol": {
+    "name": "Ethanol (EtOH)",
+    "cas": "64-17-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "노출기준설정물질",
+      "wiheom": "제4류 알코올류",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetone": {
+    "name": "Acetone",
+    "cas": "67-64-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제4류 제1석유류 (수용성)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장. 정전기 방지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "toluene": {
+    "name": "Toluene",
+    "cas": "108-88-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or PVA Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제4류 제1석유류 (비수용성)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic (신경독성)",
+      "Reprotoxic"
+    ],
+    "storage": "인화성 보관장. 강력한 산화제와 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "hexane": {
+    "name": "n-Hexane",
+    "cas": "110-54-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제4류 제1석유류 (비수용성)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Neurotoxic (신경독성)",
+      "Environmental Hazard"
+    ],
+    "storage": "인화성 캐비닛. 정전기 주의.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nah": {
+    "name": "Sodium hydride",
+    "cas": "7646-69-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Heavy Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "노출기준설정물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Water Reactive",
+      "Flammable Solid",
+      "Corrosive"
+    ],
+    "storage": "Ar/N2 밀봉 보관. 수분 절대 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "lah": {
+    "name": "Lithium aluminum hydride",
+    "cas": "16853-85-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Heavy Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상, 금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Water Reactive",
+      "Pyrophoric Risk",
+      "Corrosive"
+    ],
+    "storage": "Ar/N2 밀봉 보관. 공기 및 수분 완벽 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "n-buli": {
+    "name": "n- Butyllithium, 2.5M solution in hexanes",
+    "cas": "109-72-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Double Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "노출기준설정물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질 (n-BuLi), 용매는 제4류",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Pyrophoric (공기 노출 시 즉시 발화)",
+      "Water Reactive"
+    ],
+    "storage": "냉장 보관 (0-5℃). 셉텀 유지 필수.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "tfa": {
+    "name": "Trifluoroacetic acid (TFA)",
+    "cas": "76-05-1",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene/Butyl Gloves",
+      "Face Shield",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive (강부식성)",
+      "Toxic Vapor"
+    ],
+    "storage": "산성 전용 보관장(Acid Cabinet). 염기 및 금속과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "hcl": {
+    "name": "Hydrogen chloride, 2M in diethyl ether",
+    "cas": "7647-01-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene/Acid-resistant Gloves",
+      "Face Shield",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Toxic Gas"
+    ],
+    "storage": "산성 보관장. 환기 필수.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "h2so4": {
+    "name": "Sulfuric Acid (H2SO4, 98%)",
+    "cas": "7664-93-9",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Acid Apron",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질(강산), 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제6류 산화성액체",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive",
+      "Water Reactive",
+      "Carcinogen"
+    ],
+    "storage": "산 전용 보관장. 유기물과 절대 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "hno3": {
+    "name": "Nitric Acid (HNO3, 60-70%)",
+    "cas": "7697-37-2",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Face Shield",
+      "Acid Apron"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "제6류 산화성액체",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Severe Corrosive",
+      "Toxic Gas"
+    ],
+    "storage": "산성 보관장. 유기물과 절대 접촉 금지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "naoh": {
+    "name": "Sodium Hydroxide (NaOH)",
+    "cas": "1310-73-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles (안구 손상 치명적)"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 특수건강진단대상, 작업환경측정대상",
+      "wiheom": "비위험물 (극물질)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "건조한 곳 보관(조해성). 산성 물질과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "k2co3": {
+    "name": "Potassium Carbonate (K2CO3)",
+    "cas": "584-08-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "건조한 곳 (흡습성 강함).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "et3n": {
+    "name": "Triethyl amine",
+    "cas": "121-44-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Corrosive",
+      "Toxic Vapor"
+    ],
+    "storage": "인화성 보관장. 산성 물질과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dipea": {
+    "name": "N,N-Diisopropylethylamine",
+    "cas": "7087-68-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Corrosive"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "pd-c": {
+    "name": "Palladium 5% on calcium carbonate (poisoned with lead)",
+    "cas": "7440-05-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable Solid (건조 시)",
+      "Pyrophoric"
+    ],
+    "storage": "냉암소 보관. 수분 함유 상태 유지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "raney-ni": {
+    "name": "Nickel, powder, <150 μm, 99.99%",
+    "cas": "7440-02-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Pyrophoric",
+      "Carcinogen"
+    ],
+    "storage": "물 또는 에탄올 하에 잠긴 상태 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "socl2": {
+    "name": "Thionyl Chloride (SOCl2)",
+    "cas": "7719-09-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or Neoprene Gloves",
+      "Face Shield",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive",
+      "Water Reactive"
+    ],
+    "storage": "건조한 냉암소 보관. 수분 절대 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "pocl3": {
+    "name": "Phosphorus Oxychloride (POCl3)",
+    "cas": "10025-87-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or Neoprene Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive",
+      "Water Reactive",
+      "Toxic Vapor"
+    ],
+    "storage": "수분 차단, 환기 필수.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "mei": {
+    "name": "Iodomethane",
+    "cas": "74-88-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton Gloves (니트릴 투과됨)",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Carcinogen",
+      "Vesicant"
+    ],
+    "storage": "빛 차단(갈색병), 냉장/냉동 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "mcpba": {
+    "name": "3-Chloroperbenzoic acid",
+    "cas": "937-14-4",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 산화성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Organic Peroxide",
+      "Irritant"
+    ],
+    "storage": "냉장 보관. 충격, 열, 금속 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "nabh4": {
+    "name": "Sodium Borohydride",
+    "cas": "16940-66-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Water Reactive",
+      "Toxic",
+      "Corrosive"
+    ],
+    "storage": "건조한 곳 보관. 산성 물질과 절대 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dcc": {
+    "name": "N,N'- Dicyclohexylcarbodiimide, 99%",
+    "cas": "538-75-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Irritant",
+      "Sensitizer (알레르기성 유발)"
+    ],
+    "storage": "건조한 냉암소 보관. / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "hatur": {
+    "name": "HATU",
+    "cas": "148893-10-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Sensitizer"
+    ],
+    "storage": "냉장 또는 냉동 보관. / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "iodine": {
+    "name": "Iodine",
+    "cas": "7553-56-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic Vapor",
+      "Corrosive",
+      "Environmental Hazard"
+    ],
+    "storage": "밀폐 보관. 승화성 주의.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetonitrile": {
+    "name": "Acetonitrile (MeCN)",
+    "cas": "75-05-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic"
+    ],
+    "storage": "인화성 보관장. 강산/강산화제와 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dmso": {
+    "name": "Dimethyl sulfoxide (DMSO)",
+    "cas": "67-68-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Butyl or Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Skin Absorption"
+    ],
+    "storage": "건조한 상온 보관. 흡습성 매우 강함.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nmp": {
+    "name": "N-Methyl-2-pyrrolidone (NMP)",
+    "cas": "872-50-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Butyl Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Reprotoxic (생식독성)",
+      "Irritant"
+    ],
+    "storage": "환기 양호한 곳. 빛 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dmac": {
+    "name": "N,N- Dimethylacetamide",
+    "cas": "127-19-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Reprotoxic",
+      "Skin Absorption"
+    ],
+    "storage": "인화성 보관장. 할로겐 화합물과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Triazole",
+        "Oxadiazole",
+        "Thioamide",
+        "Retro-amide"
+      ]
+    }
+  },
+  "ipa": {
+    "name": "Isopropyl alcohol",
+    "cas": "67-63-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Fluorine",
+        "Ether",
+        "Methyl Ether",
+        "Sulfonamide"
+      ]
+    }
+  },
+  "dioxane": {
+    "name": "1,4-Dioxane",
+    "cas": "123-91-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 인화성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Carcinogen",
+      "Peroxide Former"
+    ],
+    "storage": "인화성/독성물질 보관장. 공기 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "mtbe": {
+    "name": "Methyl tert-butyl ether (MTBE)",
+    "cas": "1634-04-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장. (디에틸 에테르보다 과산화물 형성 덜함).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dipe": {
+    "name": "Diisopropyl ether (DIPE)",
+    "cas": "108-20-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Peroxide Former"
+    ],
+    "storage": "밀폐 및 어두운 곳 보관. 장기 보관 금지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "xylene": {
+    "name": "Xylenes",
+    "cas": "1330-20-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or PVA Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Harmful"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "cyclohexane": {
+    "name": "Cyclohexane",
+    "cas": "110-82-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Environmental Hazard"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "heptane": {
+    "name": "n-Heptane",
+    "cas": "142-82-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Environmental Hazard"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "chloroform": {
+    "name": "Chloroform",
+    "cas": "67-66-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or PVA Gloves (니트릴 통과)",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Carcinogen",
+      "Systemic Toxicity"
+    ],
+    "storage": "냉암소 보관. 알칼리 금속, 강염기 혼합 금지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "formic_acid": {
+    "name": "Formic acid",
+    "cas": "64-18-6",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Face Shield",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Toxic Vapor"
+    ],
+    "storage": "산성 전용 보관장. 밀폐 보관 시 CO 가스 주의.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "acetic_acid": {
+    "name": "Acetic acid (Glacial)",
+    "cas": "64-19-7",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene/Butyl Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 인화성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Flammable Liquid"
+    ],
+    "storage": "부식성 전용 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "msoh": {
+    "name": "Methanesulfonic acid (MsOH)",
+    "cas": "75-75-2",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive"
+    ],
+    "storage": "부식성 전용 보관장. 금속 용기 부식 극심.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "ptsoh": {
+    "name": "p-Toluenesulfonic Acid Monohydrate",
+    "cas": "6192-52-5",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Irritant"
+    ],
+    "storage": "건조한 상온 보관 (흡습성 강함). / RT / rt",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "h3po4": {
+    "name": "Phosphoric acid (H3PO4, 85%)",
+    "cas": "7664-38-2",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "부식성 전용 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "nh4oh": {
+    "name": "Ammonium hydroxide",
+    "cas": "1336-21-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile or Neoprene Gloves",
+      "Face Shield",
+      "Fume Hood 필수"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Toxic Vapor",
+      "Environmental Hazard"
+    ],
+    "storage": "서늘한 곳 보관. 산/할로겐화물과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "koh": {
+    "name": "Potassium hydroxide (KOH)",
+    "cas": "1310-58-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive"
+    ],
+    "storage": "조해성 강함. 밀폐하여 건조한 곳 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "lioh": {
+    "name": "Lithium hydroxide monohydrate",
+    "cas": "1310-66-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive"
+    ],
+    "storage": "밀폐 보관. 공기 중 CO2를 강력히 흡수함.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nahco3": {
+    "name": "Sodium bicarbonate",
+    "cas": "144-55-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "건조한 상온 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "cs2co3": {
+    "name": "Cesium carbonate, 99% (metals basis) powder/Granules",
+    "cas": "534-17-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "조해성 및 흡습성 강하므로 데시케이터 보관. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "kotbu": {
+    "name": "Potassium tert-Butoxide",
+    "cas": "865-47-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Water Reactive",
+      "Flammable Solid"
+    ],
+    "storage": "공기 및 수분 완벽 차단. Ar/N2 데시케이터 보관. / RT / rt",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "naotbu": {
+    "name": "Sodium tert-butoxide",
+    "cas": "865-48-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Water Reactive",
+      "Flammable Solid"
+    ],
+    "storage": "Ar/N2 데시케이터 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "piperidine": {
+    "name": "Piperidine, 99%",
+    "cas": "110-89-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Corrosive",
+      "Highly Flammable"
+    ],
+    "storage": "인화성 보관장. 밀폐 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "pyridine": {
+    "name": "pyridine, ACS, 99.0+%",
+    "cas": "110-86-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장. 환기 철저.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "isopropylamine": {
+    "name": "Isopropylamine, ≥99.5%",
+    "cas": "75-31-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Respirator"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Extremely Flammable",
+      "Corrosive",
+      "Toxic Gas"
+    ],
+    "storage": "인화성 보관장. 냉장 보관 권장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "diethylamine": {
+    "name": "Diethylamine, purified by redistillation, 99.5%",
+    "cas": "109-89-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Corrosive"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "hmds": {
+    "name": "1,1,1,3,3,3- Hexamethyldisilazane",
+    "cas": "999-97-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic",
+      "Corrosive"
+    ],
+    "storage": "인화성 보관장. 습기 차단. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "lihmds": {
+    "name": "Lithium bis(trimethylsilyl)amide solution 1.0M in THF",
+    "cas": "4039-32-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Water Reactive",
+      "Flammable"
+    ],
+    "storage": "Ar/N2 치환 후 냉장(2-8도) 보관. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Triazole",
+        "Oxadiazole",
+        "Thioamide",
+        "Retro-amide"
+      ]
+    }
+  },
+  "dibal-h": {
+    "name": "Diisobutylaluminum hydride, 1M solution in toluene, packaged under Argon in resealable ChemSeal™ bottles",
+    "cas": "1191-15-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Double Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Pyrophoric (원액 노출 시 즉발화)",
+      "Water Reactive",
+      "Flammable"
+    ],
+    "storage": "셉텀 완전 밀봉 후 냉장 보관. 공기/수분 절대 차단. / Fridge / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "et3sih": {
+    "name": "Triethylsilane, 99%",
+    "cas": "617-86-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장. 산성 조건(TFA 등)과 보관 분리. / Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bh3-thf": {
+    "name": "Borane-Tetrahydrofuran Complex",
+    "cas": "14044-65-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Flame-resistant Lab Coat",
+      "Nitrile Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Water Reactive",
+      "Flammable",
+      "Toxic Gas"
+    ],
+    "storage": "Ar 밀봉 후 냉장(2-8도) 보관. 시효가 짧으므로 재고 회전 주의. / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bnbr": {
+    "name": "Benzyl bromide",
+    "cas": "100-39-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood 필수"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Lachrymator (최루성)",
+      "Corrosive",
+      "Toxic"
+    ],
+    "storage": "냉암소 보관. 빛 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "accl": {
+    "name": "Acetyl chloride",
+    "cas": "75-36-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Face Shield",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 금수성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Severe Corrosive",
+      "Water Reactive"
+    ],
+    "storage": "건조한 냉암소 보관. 밀폐 철저.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ac2o": {
+    "name": "Acetic anhydride",
+    "cas": "108-24-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Goggles",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Corrosive",
+      "Toxic Vapor"
+    ],
+    "storage": "인화성/부식성 보관. 수분 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "boc2o": {
+    "name": "Di-tert-butyl dicarbonate",
+    "cas": "24424-99-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic",
+      "Sensitizer"
+    ],
+    "storage": "냉장 보관 (녹는점 23도. 상온에서 서서히 분해되며 압력 상승). / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dmap": {
+    "name": "4-Dimethylaminopyridine",
+    "cas": "1122-58-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Double Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Fatal in contact with skin",
+      "Neurotoxic"
+    ],
+    "storage": "독성물질(Toxic) 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "hobt": {
+    "name": "1-Hydroxybenzotriazole (HOBt, ~20% wetted)",
+    "cas": "2592-95-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Explosive (건조 시)"
+    ],
+    "storage": "밀봉하여 냉암소 보관. 수분 함유 상태 유지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "edci": {
+    "name": "1- Ethyl-3-(3-dimethylaminopropyl)carbodiimide Hydrochloride\n/ (N-(3-Dimethylaminopropyl)-N'-ethylcarbodiimide hydrochloride)",
+    "cas": "25952-53-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Skin Sensitizer (강력한 피부 알레르기 유발)",
+      "Irritant"
+    ],
+    "storage": "냉동 보관 (-20도 권장, 수분 차단). / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dic": {
+    "name": "N,N'-Diisopropylcarbodiimide (DIC)",
+    "cas": "693-13-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Fatal Inhalation",
+      "Skin Sensitizer (강렬한 알레르기 반응)",
+      "Corrosive"
+    ],
+    "storage": "냉장 보관. 수분 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "pph3": {
+    "name": "Triphenylphosphine, powder, 99%",
+    "cas": "603-35-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Sensitizer",
+      "Environmental Hazard",
+      "Irritant"
+    ],
+    "storage": "건조한 상온 보관. 산화제와 격리. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "pd_pph3_4": {
+    "name": "Tetrakis(triphenylphosphine)palladium",
+    "cas": "14221-01-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Environmental Hazard"
+    ],
+    "storage": "빛 및 공기 완전 차단. Ar 치환 후 냉장 보관 (노란색 유지). / Fridge / Freezer / fridge / freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "cui": {
+    "name": "Copper(Ⅰ) iodide, 98%",
+    "cas": "7681-65-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Very Toxic to Aquatic Life",
+      "Irritant"
+    ],
+    "storage": "건조하고 어두운 곳 (빛에 의해 분해). / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "zn": {
+    "name": "Zinc, dust, <10 micron",
+    "cas": "7440-66-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Water Reactive (수소가스 방출)",
+      "Pyrophoric (분진 폭발 위험)",
+      "Environmental Hazard"
+    ],
+    "storage": "건조한 곳 보관. 강산 및 수분 절대 격리. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "mgso4": {
+    "name": "Magnesium sulfate anhydrous (MgSO4)",
+    "cas": "7487-88-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "건조한 곳 보관 (흡습성).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "na2so4": {
+    "name": "Sodium sulfate anhydrous (Na2SO4)",
+    "cas": "7757-82-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "상온 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "celite": {
+    "name": "Celite (Diatomaceous earth)",
+    "cas": "68855-54-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "N95 Dust Mask 필수"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Carcinogen (호흡기 흡입 시 규폐증 및 폐암 유발 위험)",
+      "Irritant"
+    ],
+    "storage": "건조한 상온 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "silica": {
+    "name": "Silica gel (Chromatography grade)",
+    "cas": "7631-86-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "작업환경측정대상, 특수건강진단대상",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant (호흡기 및 점막 건조 유발)"
+    ],
+    "storage": "건조한 상온 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "dce": {
+    "name": "1,2- Dichloroethane, 99+%",
+    "cas": "107-06-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Carcinogen (강력한 발암성)",
+      "Flammable"
+    ],
+    "storage": "인화성/독성 보관장. 빛 차단. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "mek": {
+    "name": "2-Butanone (Methyl ethyl ketone, MEK)",
+    "cas": "78-93-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "diethyl_ether": {
+    "name": "Diethyl ether 99.5%, Extra dry, Stabilized, Acroseal",
+    "cas": "60-29-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Extremely Flammable",
+      "Peroxide Former"
+    ],
+    "storage": "환기 잘되는 서늘한 곳. 장기 보관 금지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "t_butanol": {
+    "name": "tert-Butanol (t-BuOH)",
+    "cas": "75-65-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Irritant"
+    ],
+    "storage": "상온 보관 (어는점이 25도로 겨울철에 쉽게 얼어버림).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "cpme": {
+    "name": "Cyclopentyl methyl ether (CPME)",
+    "cas": "5614-37-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Peroxide Former"
+    ],
+    "storage": "인화성 보관장. 공기 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "chlorobenzene": {
+    "name": "Chlorobenzene",
+    "cas": "108-90-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic",
+      "Environmental Hazard"
+    ],
+    "storage": "인화성 보관장. 산화제 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Benzene",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Structural Rigidity",
+          "Pi-Stacking Interaction",
+          "Easy to Substitute"
+        ],
+        "cons": [
+          "Metabolic Oxidation (Epoxide)",
+          "High Lipophilicity"
+        ],
+        "drugs": [
+          "Aspirin",
+          "Atorvastatin"
+        ],
+        "isosteres": [
+          "Pyridine",
+          "Thiophene",
+          "Bicyclo[1.1.1]pentane"
+        ]
+      }
+    }
+  },
+  "aniline": {
+    "name": "Aniline, 99.5+%. A.C.S reagent",
+    "cas": "62-53-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or Butyl Gloves",
+      "Goggles",
+      "Fume Hood 필수"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 특수건강진단대상, 특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Carcinogen",
+      "Skin Absorption"
+    ],
+    "storage": "독성물질 보관장. 빛에 노출 시 갈색으로 산화됨. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Aniline",
+          "risk": "Metabolic Activation (Tox)",
+          "level": "Medium"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzylamine": {
+    "name": "Benzylamine",
+    "cas": "100-46-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive (강부식성 피부 손상)"
+    ],
+    "storage": "인화성 보관장. 산성 물질 격리. 공기 중 CO2를 흡수해 카보네이트 염 형성. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "morpholine": {
+    "name": "Morpholine",
+    "cas": "110-91-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile/Butyl Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Corrosive"
+    ],
+    "storage": "인화성 보관장. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "piperazine": {
+    "name": "Piperazine",
+    "cas": "110-85-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Sensitizer (호흡기/피부 과민성)"
+    ],
+    "storage": "건조한 상온 (흡습성 및 CO2 흡수 강함).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nmm": {
+    "name": "4-Methylmorpholine (NMM)",
+    "cas": "109-02-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Corrosive",
+      "Toxic Vapor"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "hbtu": {
+    "name": "HBTU",
+    "cas": "94790-37-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Sensitizer",
+      "Explosive (조건 부)"
+    ],
+    "storage": "냉암소 보관. 빛과 습기 차단. / Fridge / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "pybop": {
+    "name": "1H- Benzotriazol-1-yloxytripyrrolidinophosphonium Hexafluorophosphate",
+    "cas": "128625-52-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Sensitizer"
+    ],
+    "storage": "냉장 보관 (2-8℃). 습기에 민감. / Freezer / Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "tmscl": {
+    "name": "Chlorotrimethylsilane",
+    "cas": "75-77-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene/Viton Gloves",
+      "Face Shield",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Toxic",
+      "Corrosive",
+      "Water Reactive"
+    ],
+    "storage": "Ar/N2 하에 냉암소 보관. 수분 절대 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "tf2o": {
+    "name": "Trifluoromethanesulfonic Anhydride",
+    "cas": "358-23-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 산화성 물질",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Corrosive",
+      "Water Reactive"
+    ],
+    "storage": "냉암소 또는 냉장 보관. 수분 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "oxalyl_chloride": {
+    "name": "Oxayl chloride, 98%",
+    "cas": "79-37-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene/Viton Gloves",
+      "Face Shield",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive",
+      "Toxic Vapor (CO, CO2, HCl)",
+      "Water Reactive"
+    ],
+    "storage": "냉암소 밀폐 보관. 습기 및 염기성 물질 격리. / Fridge / fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bbr3": {
+    "name": "Boron tribromide solution",
+    "cas": "10294-33-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Heavy Neoprene Gloves",
+      "Face Shield",
+      "Chemical Suit"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Fatal",
+      "Corrosive",
+      "Water Reactive"
+    ],
+    "storage": "냉장 보관. Ar/N2 밀봉. 수분 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "br2": {
+    "name": "Bromine",
+    "cas": "7726-95-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene/Viton Gloves",
+      "Face Shield",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질), 특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Fatal Inhalation",
+      "Severe Corrosive",
+      "Environmental Hazard"
+    ],
+    "storage": "냉암소 보관. 잠금 장치 필수.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nbs": {
+    "name": "N- Bromosuccinimide",
+    "cas": "128-08-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "산화성 물질",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Corrosive",
+      "Oxidizer"
+    ],
+    "storage": "냉장 보관. 빛 차단 (오래되면 브롬 가스 발생하여 노랗게 변함). / Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ncs": {
+    "name": "N-Chlorosuccinimide (NCS)",
+    "cas": "128-09-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Corrosive"
+    ],
+    "storage": "냉장 보관. 빛과 습기 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "kmno4": {
+    "name": "Pottassium permanganate",
+    "cas": "7722-64-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "산화성 물질",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Strong Oxidizer",
+      "Harmful to Environment",
+      "Corrosive"
+    ],
+    "storage": "산화성 물질 보관장. 환원제, 유기물(특히 글리세린 등)과 절대 격리. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "cro3": {
+    "name": "Chromium(VI) oxide",
+    "cas": "1333-82-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "N95/P100 Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "산화성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Fatal",
+      "Carcinogen",
+      "Genetic Defect"
+    ],
+    "storage": "냉암소 보관. 가연물 격리. 잠금 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "h2o2": {
+    "name": "hydrogen peroxide",
+    "cas": "7722-84-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상, 산화성 물질",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Corrosive",
+      "Irritant"
+    ],
+    "storage": "서늘한 곳 보관. 빛 차단. 전용 용기 사용.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "naio4": {
+    "name": "Sodium periodate (NaIO4)",
+    "cas": "7790-28-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 산화성 물질",
+      "wiheom": "제1류 산화성고체 / 제6류 산화성액체 (확인 요망)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Irritant",
+      "Environmental Hazard"
+    ],
+    "storage": "산화성 보관장. 환원제 및 가연물과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nan3": {
+    "name": "Sodium Azide",
+    "cas": "26628-22-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Double Nitrile Gloves",
+      "Goggles",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Fatal",
+      "Toxic Gas with Acids"
+    ],
+    "storage": "냉암소 보관. 산 및 금속 격리. 잠금 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Azide",
+          "risk": "Explosive / Reactive Liability",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "triphosgene": {
+    "name": "Triphosgen, 98%",
+    "cas": "32315-10-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Goggles",
+      "Respirator / Fume Hood 필수"
+    ],
+    "regulation": {
+      "sanan": "특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Corrosive",
+      "Fatal Inhalation"
+    ],
+    "storage": "냉장 보관 (2-8℃). 수분 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "hydrazine": {
+    "name": "Hydrazine monohydrate",
+    "cas": "7803-57-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Butyl/Viton Gloves",
+      "Face Shield",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic",
+      "Corrosive",
+      "Carcinogen"
+    ],
+    "storage": "냉암소 보관. 산화제 및 산 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Hydrazine",
+          "risk": "Severe Toxicity / Carcinogenicity",
+          "level": "Extreme"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "nabh3cn": {
+    "name": "Sodium Cyanoborohydride",
+    "cas": "25895-60-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Fatal",
+      "Water Reactive",
+      "Flammable Solid"
+    ],
+    "storage": "Ar/N2 밀봉 보관. 수분/산 절대 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "stab": {
+    "name": "Sodium triacetoxyborohydride, 95%",
+    "cas": "56553-60-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Water Reactive (수소가스 발생)",
+      "Irritant"
+    ],
+    "storage": "건조한 상온 (수분에 취약). / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "koac": {
+    "name": "Potassium acetate (KOAc)",
+    "cas": "127-08-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "상온 보관 (조해성 강함, 밀폐).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "k3po4": {
+    "name": "Potassium phosphate tribasic",
+    "cas": "7778-53-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive (눈 손상)",
+      "Irritant"
+    ],
+    "storage": "상온 보관 (흡습성 매우 강함). / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "k2hpo4": {
+    "name": "Potassium phosphate dibasic (K2HPO4)",
+    "cas": "7758-11-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "상온 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "kf": {
+    "name": "Potassium fluoride, 99.99% metals basis",
+    "cas": "7789-23-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic",
+      "Severe Eye Damage"
+    ],
+    "storage": "냉암소 보관. 수분 차단. 플라스틱 용기 권장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "na2s2o3": {
+    "name": "Sodium thiosulfate (Na2S2O3)",
+    "cas": "7772-98-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "금수성 물질",
+      "wiheom": "제3류 자연발화성 및 금수성물질",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "건조한 상온 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "cuoac2": {
+    "name": "Copper(Ⅱ) acetate",
+    "cas": "142-71-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Harmful if Swallowed",
+      "Very Toxic to Aquatic Life",
+      "Irritant"
+    ],
+    "storage": "건조한 상온 보관. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "znbr2": {
+    "name": "Zinc bromide (ZnBr2)",
+    "cas": "7699-45-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Environmental Hazard",
+      "Irritant"
+    ],
+    "storage": "데시케이터 보관 (강한 흡습성).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "agotf": {
+    "name": "Silver trifluoromethanesulfonate",
+    "cas": "2923-28-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Environmental Hazard",
+      "Light Sensitive"
+    ],
+    "storage": "은박지로 완벽히 빛 차단. 데시케이터 (수분/빛에 매우 민감하여 검게 변함). / Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "tbaf": {
+    "name": "Tetrabutylammonium Fluoride",
+    "cas": "429-41-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive (불소 이온)",
+      "Flammable"
+    ],
+    "storage": "냉장 보관. (오래되면 용액이 갈색으로 짙게 변색됨). 유리 용기 대신 플라스틱(Teflon) 용기 권장. / Fridge / fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "tippsh": {
+    "name": "Triisopropylsilane (TIPS)",
+    "cas": "6485-79-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Flammable",
+      "Irritant"
+    ],
+    "storage": "인화성 보관장.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "propargyl_bromide": {
+    "name": "Propargyl bromide, 80 wt.% solution in toluene, stabilized",
+    "cas": "106-96-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Toxic",
+      "Explosive Risk (가열 시)"
+    ],
+    "storage": "냉장 또는 냉동 보관. 중금속(Cu, Ag 등)과 격리 (폭발성 아세틸리드 생성 위험). / Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "allyl_bromide": {
+    "name": "Allyl Bromide Reagentplus, 99%",
+    "cas": "106-95-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Viton or Heavy Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "인화성 물질, 특별관리물질 (발암성/독성)",
+      "wiheom": "제4류 인화성액체 (수량 확인 필요)",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Highly Flammable",
+      "Toxic",
+      "Corrosive",
+      "Carcinogen (Suspected)"
+    ],
+    "storage": "냉암소 보관. 빛과 열 차단. / Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "chloroacetyl_chloride": {
+    "name": "Chloroacetyl chloride",
+    "cas": "79-04-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene/Viton Gloves",
+      "Face Shield",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질), 특별관리물질 (발암성/독성)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Severe Corrosive",
+      "Fatal Inhalation",
+      "Lachrymator (강한 최루성)"
+    ],
+    "storage": "부식성/독성 캐비닛 보관. 수분 절대 차단. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzaldehyde": {
+    "name": "Benzaldehyde, ReagentPlus, 99%",
+    "cas": "100-52-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Combustible Liquid",
+      "Irritant"
+    ],
+    "storage": "밀봉 후 냉장 보관. (공기 중 산소에 의해 서서히 벤조산으로 산화되어 결정 생성됨). / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "p_anisaldehyde": {
+    "name": "4- Methoxybenzaldehyde, 98%",
+    "cas": "123-11-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "냉장 보관. 산소 노출 차단. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ninhydrin": {
+    "name": "Ninhydrin",
+    "cas": "485-47-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Harmful if Swallowed"
+    ],
+    "storage": "실온에 차광 보관. / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "citric_acid": {
+    "name": "Citric acid",
+    "cas": "77-92-9",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant (눈/피부)"
+    ],
+    "storage": "상온 건조 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "mandelic_acid": {
+    "name": "Mandelic acid ((S)-(+)-Mandelic acid)",
+    "cas": "17199-29-0",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant (눈 손상 위험)"
+    ],
+    "storage": "상온 보관. 빛 노출 회피.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "acetaldoxime": {
+    "name": "Acetaldoxime",
+    "cas": "107-29-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "5_acetamido_2_hydroxyacetophen": {
+    "name": "5`- Acetamido-2`-hydroxyacetophenone",
+    "cas": "7298-67-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_acetamidobenzaldehyde": {
+    "name": "4- Acetamidobenzaldehyde",
+    "cas": "122-85-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_acetamidophenol_98": {
+    "name": "4- Acetamidophenol, 98%",
+    "cas": "103-90-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetanilide": {
+    "name": "Acetanilide",
+    "cas": "103-84-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetoacetanilide": {
+    "name": "Acetoacetanilide",
+    "cas": "102-01-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetohydrazide": {
+    "name": "Acetohydrazide",
+    "cas": "1068-57-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Azide",
+          "risk": "Explosive / Reactive Liability",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_acetonaphtone": {
+    "name": "2`- Acetonaphtone",
+    "cas": "93-08-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetonylacetone": {
+    "name": "Acetonylacetone",
+    "cas": "110-13-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetophenone": {
+    "name": "Acetophenone",
+    "cas": "98-86-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_acetyl_5_bromothiophene": {
+    "name": "2- Acetyl-5-bromothiophene",
+    "cas": "5370-25-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "acetylacetone": {
+    "name": "Acetylacetone",
+    "cas": "123-54-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_acetylbiphenyl": {
+    "name": "4- Acetylbiphenyl",
+    "cas": "92-91-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_acetylfuran": {
+    "name": "2- Acetylfuran",
+    "cas": "1192-62-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_acetylisatin_97": {
+    "name": "1- Acetylisatin, 97%",
+    "cas": "574-17-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_acetylpyridine": {
+    "name": "3- Acetylpyridine",
+    "cas": "350-03-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "2_acetylpyridine_98": {
+    "name": "2- Acetylpyridine, 98%",
+    "cas": "1122-62-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "acrylic_acid": {
+    "name": "Acrylic Acid",
+    "cas": "79-10-7",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "acrylonitrile_99": {
+    "name": "Acrylonitrile, 99+%",
+    "cas": "107-13-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_adamantanamine_98": {
+    "name": "1- Adamantanamine, 98%",
+    "cas": "768-94-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_adamantyl_isothiocyanate": {
+    "name": "1- Adamantyl Isothiocyanate",
+    "cas": "4411-26-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "adenosine": {
+    "name": "Adenosine",
+    "cas": "58-61-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "alanine": {
+    "name": "β- Alanine",
+    "cas": "107-95-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "l_alanine_benzyl_ester_hydroch": {
+    "name": "L- Alanine Benzyl Ester Hydrochloride",
+    "cas": "5557-83-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "l_alanine_methyl_ester_hydroch": {
+    "name": "L- Alanine Methyl Ester Hydrochloride",
+    "cas": "2491-20-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "alanine_methyl_ester_hydrochlo": {
+    "name": "- Alanine Methyl Ester Hydrochloride, 98%",
+    "cas": "3196-73-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "aliquat_336": {
+    "name": "Aliquat® 336",
+    "cas": "Unknown",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "alluminum_chloride": {
+    "name": "Alluminum chloride",
+    "cas": "7446-70-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT / rt",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "allyl_alcohol_99": {
+    "name": "Allyl alcohol, 99+%",
+    "cas": "107-18-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Fluorine",
+        "Ether",
+        "Methyl Ether",
+        "Sulfonamide"
+      ]
+    }
+  },
+  "allyl_disulfide_tech_80": {
+    "name": "Allyl disulfide, tech. 80%",
+    "cas": "2179-57-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "allyl_isocyanate": {
+    "name": "Allyl isocyanate",
+    "cas": "1476-23-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "allylamine_hydrochloride": {
+    "name": "Allylamine Hydrochloride",
+    "cas": "10017-11-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "aluminium_iodide": {
+    "name": "Aluminium Iodide",
+    "cas": "7784-23-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_phenol": {
+    "name": "2- Amino phenol",
+    "cas": "95-55-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_amino_1_benzylpiperidine_98": {
+    "name": "4- Amino-1-benzylpiperidine, 98%",
+    "cas": "50541-93-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_amino_1_isopropylpiperidine": {
+    "name": "4- Amino-1-isopropylpiperidine",
+    "cas": "127285-08-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_1_phenylethanol": {
+    "name": "2- Amino-1-phenylethanol",
+    "cas": "7568-93-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_amino_1_propanol": {
+    "name": "3- Amino-1-propanol",
+    "cas": "156-87-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_amino_1_tert_butoxycarbonylp": {
+    "name": "4- Amino-1-tert-butoxycarbonylpiperidine",
+    "cas": "87120-72-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_amino_2_trifluoromethyl_pyri": {
+    "name": "4- Amino-2-(trifluoromethyl)pyridine",
+    "cas": "147149-98-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "4_amino_2_bromopyridine": {
+    "name": "4- Amino-2-bromopyridine",
+    "cas": "7598-35-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "3_amino_2_chloropyridine_98": {
+    "name": "3- Amino-2-chloropyridine, 98+%",
+    "cas": "6298-19-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "4_amino_2_methoxypyridine": {
+    "name": "4- Amino-2-methoxypyridine",
+    "cas": "20265-39-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "4_amino_2_methylbenzoic_acid": {
+    "name": "4- Amino-2-methylbenzoic Acid",
+    "cas": "2486-75-1",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "2_amino_3_5_dichloropyridine": {
+    "name": "2- Amino-3,5-dichloropyridine",
+    "cas": "4214-74-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "2_amino_3_bromopyridine": {
+    "name": "2- Amino-3-bromopyridine",
+    "cas": "13534-99-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "4_amino_3_hydroxybenzoic_acid": {
+    "name": "4- Amino-3-hydroxybenzoic Acid",
+    "cas": "2374-03-0",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "4_amino_3_methoxybenzoic_acid": {
+    "name": "4- Amino-3-methoxybenzoic acid",
+    "cas": "2486-69-3",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "s_2_amino_3_methylbutan_1_ol": {
+    "name": "L- Valinol",
+    "cas": "2026-48-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_3_nitrophenol": {
+    "name": "2- Amino-3-nitrophenol",
+    "cas": "603-85-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Nitro Group",
+          "risk": "Potential Mutagenicity",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_amino_4_bromonaphthalene": {
+    "name": "1- Amino-4-bromonaphthalene",
+    "cas": "2298-07-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_amino_4_chloronaphthalene": {
+    "name": "1- Amino-4-chloronaphthalene",
+    "cas": "4684-12-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_amino_4_fluoro_benzoic_acid": {
+    "name": "3- Amino-4-fluoro benzoic acid",
+    "cas": "2365-85-7",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "3_amino_4_hydroxybenzoic_acid": {
+    "name": "3- Amino-4-hydroxybenzoic acid",
+    "cas": "1571-72-8",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "2_amino_5_2_chlorophenyl_1_3_4": {
+    "name": "2- Amino-5-(2-chlorophenyl)-1,3,4-oxadiazole",
+    "cas": "2138-98-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_5_4_chlorophenyl_1_3_4": {
+    "name": "2- Amino-5-(4-chlorophenyl)-1,3,4-oxadiazole",
+    "cas": "33621-61-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_5_4_methoxyphenyl_1_3_": {
+    "name": "2- Amino-5-(4-methoxyphenyl)-1,3,4-oxdiazole",
+    "cas": "5711-61-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_5_chloro_3_methylbenzo": {
+    "name": "2- Amino-5-chloro-3-methylbenzoic acid",
+    "cas": "20776-67-4",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "2_amino_5_fluoropyridine": {
+    "name": "2- Amino-5-Fluoropyridine",
+    "cas": "21717-96-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "2_amino_5_methylphenol": {
+    "name": "2- Amino-5-methylphenol",
+    "cas": "2835-98-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_5_nitrobenzonitrile": {
+    "name": "2- Amino-5-nitrobenzonitrile",
+    "cas": "17420-30-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Nitro Group",
+          "risk": "Potential Mutagenicity",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_5_phenyl_1_3_4_oxadiaz": {
+    "name": "5- Phenyl-1,3,4-oxadiazole-2-amine",
+    "cas": "1612-76-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_5_phenyl_1_3_4_thiadia": {
+    "name": "2- Amino-5-phenyl-1,3,4-thiadiazole, 97%",
+    "cas": "2002-03-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_amino_5_phenylpyrazole": {
+    "name": "3- Amino-5-phenylpyrazole",
+    "cas": "1572-10-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_amino_6_chloropyridine_98": {
+    "name": "2- Amino-6-chloropyridine, 98%",
+    "cas": "45644-21-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "2_aminobenzhydrazide": {
+    "name": "2- Aminobenzhydrazide",
+    "cas": "1904-58-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Azide",
+          "risk": "Explosive / Reactive Liability",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_aminobenzimidazole": {
+    "name": "2- Aminobenzimidazole, 97+%",
+    "cas": "934-32-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminobenzoic_acid": {
+    "name": "4- Aminobenzoic acid",
+    "cas": "150-13-0",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "4_aminobenzonitrile_98": {
+    "name": "4- Aminobenzonitrile, 98%",
+    "cas": "873-74-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_aminobenzonitrile_99": {
+    "name": "3- Aminobenzonitrile, 99%",
+    "cas": "2237-30-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_aminobenzothiazole": {
+    "name": "2- Aminobenzothiazole, 98%",
+    "cas": "136-95-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminobenzotrifluoride": {
+    "name": "4- Aminobenzotrifluoride",
+    "cas": "455-14-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "6_aminobenzoxazole": {
+    "name": "6- Aminobenzoxazole",
+    "cas": "177492-52-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_aminobenzoxazole": {
+    "name": "2- Aminobenzoxazole",
+    "cas": "4570-41-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_aminobenzylamine": {
+    "name": "3- Aminobenzylamine",
+    "cas": "4403-70-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminobenzylamine_98": {
+    "name": "4- Aminobenzylamine, 98%",
+    "cas": "4403-71-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminobiphenyl": {
+    "name": "4- Aminobiphenyl",
+    "cas": "92-67-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "aminocyclobutane": {
+    "name": "Aminocyclobutane",
+    "cas": "2516-34-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_aminoethanol": {
+    "name": "2- Aminoethanol",
+    "cas": "141-43-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Harmful"
+    ],
+    "storage": "냉암소 보관. 금속 접촉 피함.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_2_aminoethyl_benzonitrile_hy": {
+    "name": "4-(2- Aminoethyl)benzonitrile hydrochloride",
+    "cas": "167762-80-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Toxic"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_2_aminoethyl_piperidine_98": {
+    "name": "1-(2- Aminoethyl)-piperidine, 98%",
+    "cas": "27578-60-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_2_aminoethyl_pyrrolidine": {
+    "name": "1-(2- Aminoethyl)pyrrolidine",
+    "cas": "7154-73-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_aminoisobutyric_acid_methyl_": {
+    "name": "2- Aminoisobutyric acid methyl ester hydrochloride, 99%",
+    "cas": "15028-41-8",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive",
+      "Irritant"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "4_aminoisoquinoline": {
+    "name": "4- Aminoisoquinoline",
+    "cas": "23687-25-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminomethl_benzonitrile_hydr": {
+    "name": "4-( Aminomethl)benzonitrile Hydrochloride",
+    "cas": "15996-76-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant",
+      "Toxic"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminomethyl_phenol": {
+    "name": "4-(Aminomethyl)phenol",
+    "cas": "696-60-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminomethyl_pyridine": {
+    "name": "4-( Aminomethyl)pyridine",
+    "cas": "3731-53-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "4_aminomethylquinoline_hcl": {
+    "name": "4- Aminomethylquinoline HCl",
+    "cas": "1095661-17-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminomorpholine_97": {
+    "name": "4- Aminomorpholine, 97%",
+    "cas": "4319-49-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "5_aminonicotinic_acid": {
+    "name": "5- Aminonicotinic Acid",
+    "cas": "24242-19-1",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "2_aminonicotinic_acid_98": {
+    "name": "2- Aminonicotinic acid, 98+%",
+    "cas": "5345-47-1",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "3_aminophenol": {
+    "name": "3- Aminophenol",
+    "cas": "591-27-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminophenol_98": {
+    "name": "4- Aminophenol, 98+%",
+    "cas": "123-30-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_4_aminophenyl_ethanol_97": {
+    "name": "2-(4- Aminophenyl)ethanol, 97%",
+    "cas": "104-10-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_aminopyridine": {
+    "name": "3- Iodopyridine",
+    "cas": "1120-90-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "4_aminopyridine_98": {
+    "name": "4- Aminopyridine, 98%",
+    "cas": "504-24-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "2_aminopyridine_99": {
+    "name": "2- Aminopyridine, 99%",
+    "cas": "504-29-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "3_aminopyridine_99": {
+    "name": "3- Aminopyridine, 99%",
+    "cas": "462-08-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  },
+  "5_aminopyrimidine": {
+    "name": "5- Aminopyrimidine",
+    "cas": "591-55-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "6_aminoquinoline": {
+    "name": "6- Aminoquinoline",
+    "cas": "580-15-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "5_aminosalicylic_acid": {
+    "name": "5- Aminosalicylic Acid",
+    "cas": "89-57-6",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "4_aminotetrahydropyran": {
+    "name": "4- Aminotetrahydropyran",
+    "cas": "38041-19-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_aminothiazole": {
+    "name": "2- Aminothiazole",
+    "cas": "96-50-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_aminothiophenol": {
+    "name": "4- Aminothiophenol",
+    "cas": "1193-02-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ammonia_2m_in_methanol": {
+    "name": "Ammonia 2M in Methanol",
+    "cas": "7664-41-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 작업환경측정대상",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic Gas",
+      "Corrosive",
+      "Environmental Hazard"
+    ],
+    "storage": "환기 양호한 곳. 50도 이하 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ammonium_acetate": {
+    "name": "Ammonium Acetate",
+    "cas": "631-61-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ammonium_sulfide_20_24_aq_soln": {
+    "name": "Ammonium sulfide, 20-24% aq. Soln.",
+    "cas": "12135-76-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "ammonium_thiocyanate": {
+    "name": "Ammonium Thiocyanate",
+    "cas": "1762-95-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "amylamine": {
+    "name": "Amylamine",
+    "cas": "110-58-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "o_anisaldehyde_2_methoxybenzal": {
+    "name": "o- Anisaldehyde (2-Methoxybenzaldehyde)",
+    "cas": "135-02-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "m_anisaldehyde_3_methoxybenzal": {
+    "name": "m- Anisaldehyde (3-Methoxybenzaldehyde)",
+    "cas": "591-31-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "m_anisic_hydrazide_98": {
+    "name": "m- Anisic hydrazide, 98%",
+    "cas": "5785-06-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Azide",
+          "risk": "Explosive / Reactive Liability",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "m_anisidine": {
+    "name": "m- Anisidine",
+    "cas": "536-90-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "anisidine_99": {
+    "name": "р- Anisidine, 99%",
+    "cas": "104-94-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "p_anisoyl_chloride_99": {
+    "name": "p- Anisoyl chloride, 99%",
+    "cas": "100-07-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "anthranilic_acid": {
+    "name": "Anthranilic acid",
+    "cas": "118-92-3",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "l_arginine_methyl_ester_dihydr": {
+    "name": "L- Arginine methyl ester dihydrochloride",
+    "cas": "26340-89-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "l_ascorbic_acid": {
+    "name": "L- Ascorbic Acid",
+    "cas": "50-81-7",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "l_asparagine_anhydrous": {
+    "name": "L-(+)- Asparagine anhydrous",
+    "cas": "70-47-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "avasimibe": {
+    "name": "Avasimibe",
+    "cas": "Unknown",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_1_azobis_cyclohexanecarbonit": {
+    "name": "1,1′- Azobis(cyclohexanecarbonitrile)",
+    "cas": "2094-98-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "9_bbn_0_5m_solution_in_tetrahy": {
+    "name": "9- BBN, 0.5M solution in tetrahydrofuran",
+    "cas": "280-64-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzeneboronic_acid_98": {
+    "name": "Benzeneboronic acid, 98+%",
+    "cas": "98-80-6",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Benzene",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ],
+      "scaffold_info": {
+        "pros": [
+          "Structural Rigidity",
+          "Pi-Stacking Interaction",
+          "Easy to Substitute"
+        ],
+        "cons": [
+          "Metabolic Oxidation (Epoxide)",
+          "High Lipophilicity"
+        ],
+        "drugs": [
+          "Aspirin",
+          "Atorvastatin"
+        ],
+        "isosteres": [
+          "Pyridine",
+          "Thiophene",
+          "Bicyclo[1.1.1]pentane"
+        ]
+      }
+    }
+  },
+  "1_4_benzenediboronic_acid": {
+    "name": "1,4- Benzenediboronic acid",
+    "cas": "4612-26-4",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Benzene",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ],
+      "scaffold_info": {
+        "pros": [
+          "Structural Rigidity",
+          "Pi-Stacking Interaction",
+          "Easy to Substitute"
+        ],
+        "cons": [
+          "Metabolic Oxidation (Epoxide)",
+          "High Lipophilicity"
+        ],
+        "drugs": [
+          "Aspirin",
+          "Atorvastatin"
+        ],
+        "isosteres": [
+          "Pyridine",
+          "Thiophene",
+          "Bicyclo[1.1.1]pentane"
+        ]
+      }
+    }
+  },
+  "1_4_benzenedimethanol": {
+    "name": "1,4- Benzenedimethanol",
+    "cas": "589-29-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Benzene",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Structural Rigidity",
+          "Pi-Stacking Interaction",
+          "Easy to Substitute"
+        ],
+        "cons": [
+          "Metabolic Oxidation (Epoxide)",
+          "High Lipophilicity"
+        ],
+        "drugs": [
+          "Aspirin",
+          "Atorvastatin"
+        ],
+        "isosteres": [
+          "Pyridine",
+          "Thiophene",
+          "Bicyclo[1.1.1]pentane"
+        ]
+      }
+    }
+  },
+  "benzenesulfonic_acid_anhydrous": {
+    "name": "Benzenesulfonic Acid Anhydrous",
+    "cas": "98-11-3",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Benzene",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ],
+      "scaffold_info": {
+        "pros": [
+          "Structural Rigidity",
+          "Pi-Stacking Interaction",
+          "Easy to Substitute"
+        ],
+        "cons": [
+          "Metabolic Oxidation (Epoxide)",
+          "High Lipophilicity"
+        ],
+        "drugs": [
+          "Aspirin",
+          "Atorvastatin"
+        ],
+        "isosteres": [
+          "Pyridine",
+          "Thiophene",
+          "Bicyclo[1.1.1]pentane"
+        ]
+      }
+    }
+  },
+  "benzenesulfonyl_chloride": {
+    "name": "Benzenesulfonyl Chloride",
+    "cas": "98-09-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Benzene",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Structural Rigidity",
+          "Pi-Stacking Interaction",
+          "Easy to Substitute"
+        ],
+        "cons": [
+          "Metabolic Oxidation (Epoxide)",
+          "High Lipophilicity"
+        ],
+        "drugs": [
+          "Aspirin",
+          "Atorvastatin"
+        ],
+        "isosteres": [
+          "Pyridine",
+          "Thiophene",
+          "Bicyclo[1.1.1]pentane"
+        ]
+      }
+    }
+  },
+  "1h_benzimidazole_2_carboxylic_": {
+    "name": "1H- Benzimidazole-2-carboxylic acid",
+    "cas": "2849-93-6",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "1_4_benzodioxane_2_carboxylic_": {
+    "name": "1,4- Benzodioxane-2-carboxylic acid",
+    "cas": "3663-80-7",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "2_3_benzofuran_99": {
+    "name": "2,3- Benzofuran, 99%",
+    "cas": "271-89-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzofuran_2_carboxylic_acid": {
+    "name": "Benzofuran-2-carboxylic acid",
+    "cas": "Unknown",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "benzoic_acid_99_5": {
+    "name": "Benzoic acid, >99.5%",
+    "cas": "65-85-0",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "benzoic_hydrazide_98": {
+    "name": "Benzoylhydrazine",
+    "cas": "613-94-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Hydrazine",
+          "risk": "Severe Toxicity / Carcinogenicity",
+          "level": "Extreme"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_1h_benzoimidazol_2_yl_ethyla": {
+    "name": "2-(1H- Benzoimidazol-2-yl)-ethylamine",
+    "cas": "Unknown",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzooxalzole_2_carboxylic_aci": {
+    "name": "Benzooxalzole-2-carboxylic acid",
+    "cas": "21598-08-3",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "1h_benzotriazol_1_yloxytris_di": {
+    "name": "1H- Benzotriazol-1-yloxytris(dimethylamino)phosphonium Hexafluorophosphate",
+    "cas": "56602-33-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzotrifluoride": {
+    "name": "Benzotrifluoride",
+    "cas": "98-08-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzoyl_isothiocyanate_98": {
+    "name": "Benzoyl isothiocyanate, 98%",
+    "cas": "532-55-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzoyl_peroxide_wetted_with_c": {
+    "name": "Benzoyl Peroxide (wetted with ca. 25% Water)",
+    "cas": "94-36-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Organic Peroxide",
+      "Irritant",
+      "Sensitizer"
+    ],
+    "storage": "냉암소 보관 (30도 이하). 마찰 및 충격 금지.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzoylacetonitrile": {
+    "name": "Benzoylacetonitrile",
+    "cas": "614-16-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_benzoylbenzonitrile": {
+    "name": "4- Benzoylbenzonitrile",
+    "cas": "1503-49-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Toxic"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzyl_alcohol_reagentplus_99": {
+    "name": "Benzyl alcohol, Reagentplus, ≥99%",
+    "cas": "100-51-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Harmful",
+      "Irritant"
+    ],
+    "storage": "냉암소 보관. 빛/공기 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Fluorine",
+        "Ether",
+        "Methyl Ether",
+        "Sulfonamide"
+      ]
+    }
+  },
+  "benzyl_chloroformate_tech_95": {
+    "name": "Benzyl chloroformate,  tech,  95%",
+    "cas": "501-53-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzyl_isothiocyanate_98": {
+    "name": "Benzyl isothiocyanate, 98%",
+    "cas": "622-78-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "s_4_benzyl_3_propionyl_2_oxazo": {
+    "name": "(S)-(+)-4- Benzyl-3-propionyl-2-oxazolidinone, 99%",
+    "cas": "101711-78-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_benzyloxybenzyl_alchol": {
+    "name": "4- Benzyloxybenzyl Alchol",
+    "cas": "836-43-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_benzyloxyphenol_98": {
+    "name": "4- Benzyloxyphenol, 98+%",
+    "cas": "103-16-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "benzyltrimethylammonium_hydrox": {
+    "name": "Benzyltrimethylammonium hydroxide, 40% in methanol",
+    "cas": "100-85-6",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_1_1_1_biphenyl_4_4_diyl_bis_": {
+    "name": "1,1`-([1,1`- Biphenyl]-4,4`-diyl)bis(2-bromoethanone)",
+    "cas": "4072-67-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "biphenyl_2_carboxylic_acid": {
+    "name": "Biphenyl-2-carboxylic acid",
+    "cas": "947-84-2",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "biphenyl_3_carbonyl_chloride": {
+    "name": "Biphenyl-3-carbonyl Chloride",
+    "cas": "42498-44-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "biphenyl_3_carboxaldehyde": {
+    "name": "Biphenyl-3-carboxaldehyde",
+    "cas": "1204-60-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "biphenyl_4_boronic_acid_98": {
+    "name": "Biphenyl-4-boronic acid, 98+%",
+    "cas": "5122-94-1",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "biphenyl_4_carboxaldehyde": {
+    "name": "Biphenyl-4-carboxaldehyde",
+    "cas": "3218-36-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "biphenyl_4_sulfonyl_chloride_9": {
+    "name": "Biphenyl-4-sulfonyl chloride, 97%",
+    "cas": "1623-93-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_biphenylacetic_acid": {
+    "name": "4- Biphenylacetic Acid",
+    "cas": "5728-52-9",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "4_4_biphenyldiboronic_acid": {
+    "name": "4,4`- Biphenyldiboronic acid",
+    "cas": "4151-80-8",
+    "waste": "산성 폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "관리대상유해물질, 부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Corrosive"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Tetrazole",
+        "Sulfonamide",
+        "Hydroxamic Acid",
+        "Oxadiazolone"
+      ]
+    }
+  },
+  "4_biphenylyl_isocyanate_97": {
+    "name": "4- Biphenylyl isocyanate, 97%",
+    "cas": "92-95-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_2_bipyridyl": {
+    "name": "2,2`- Bipyridyl",
+    "cas": "366-18-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bis_2_2_2_trifluoroethyl_metho": {
+    "name": "Bis(2,2,2-trifluoroethyl) (methoxycarbonylmethyl)phosphonate, 95%",
+    "cas": "88738-78-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bis_2_4_pentanedionato_copper_": {
+    "name": "Bis(2,4-pentanedionato)copper(II)",
+    "cas": "13395-16-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bis_dibenzylideneacetone_palla": {
+    "name": "Bis(dibenzylideneacetone)-palladium(0)",
+    "cas": "32005-36-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "4_5_bis_diphenylphosphino_9_9_": {
+    "name": "4,5- Bis(diphenylphosphino)-9,9-Dimethylxanthene",
+    "cas": "161265-03-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_1_bis_diphenylphosphino_ferr": {
+    "name": "1,1'-Bis(diphenylphosphino)ferrocene-palladium(II)dichloride dichloromethane complex",
+    "cas": "95464-05-4",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_2_bis_diphenyphosphino_1_1_b": {
+    "name": "(±)-2,2`- Bis(diphenyphosphino)-1,1`-binaphthyl",
+    "cas": "98327-87-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bis_pinacolato_diboron_98": {
+    "name": "4,4,4′,4′,5,5,5′,5′-Octamethyl-2,2′-bi-1,3,2-dioxaborolane",
+    "cas": "73183-34-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_4_bis_trifluoromethyl_benzal": {
+    "name": "2,4- Bis(trifluoromethyl)benzaldehyde, 97%",
+    "cas": "59664-42-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Reactive Aldehyde",
+          "risk": "DNA/Protein Binding",
+          "level": "High"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "3_5_bis_trifluoromethyl_benzoy": {
+    "name": "3,5- Bis(trifluoromethyl)benzoyl Chloride",
+    "cas": "785-56-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "n_o_bis_trimethylsilyl_trifluo": {
+    "name": "N,O- Bis(trimethylsilyl)trifluoroacetamide",
+    "cas": "25561-30-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Freezer",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": [
+        "Triazole",
+        "Oxadiazole",
+        "Thioamide",
+        "Retro-amide"
+      ]
+    }
+  },
+  "bis_triphenyl_phosphine_pallad": {
+    "name": "Bis(triphenyl(phosphine))palladium(II) chloride",
+    "cas": "13965-03-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "부식성 물질 (관리대상유해물질)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "Irritant"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "bismuth_nitrate_hydrate_puratr": {
+    "name": "Bismuth(Ⅲ) nitrate hydrate, Puratronic®, 99.999% (metal basis)",
+    "cas": "10361-44-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "Fridge",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_boc_2_phenylhydrazine": {
+    "name": "1- Boc-2-phenylhydrazine",
+    "cas": "42116-43-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [
+        {
+          "name": "Hydrazine",
+          "risk": "Severe Toxicity / Carcinogenicity",
+          "level": "Extreme"
+        }
+      ],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "1_boc_4_piperidone": {
+    "name": "1- Boc-4-piperidone",
+    "cas": "79079-07-3",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Unknown",
+      "bioisosteres": []
+    }
+  },
+  "2_boc_amino_5_bromopyridine_97": {
+    "name": "2-( Boc-amino)-5-bromopyridine, 97%",
+    "cas": "159451-66-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반 화학물질 (MSDS 확인 요망)",
+      "wiheom": "비해당 또는 확인 필요",
+      "hwagwan": "확인 필요"
+    },
+    "hazards": [
+      "정보 없음"
+    ],
+    "storage": "RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "medicinal": {
+      "liabilities": [],
+      "scaffold_type": "Pyridine",
+      "bioisosteres": [],
+      "scaffold_info": {
+        "pros": [
+          "Solubility Enhancement (Basic N)",
+          "Metabolic Stability",
+          "H-bond Acceptor"
+        ],
+        "cons": [
+          "CYP Inhibition Risk",
+          "Metal Coordination"
+        ],
+        "drugs": [
+          "Imatinib",
+          "Sorafenib",
+          "Niacin"
+        ],
+        "isosteres": [
+          "Pyrazine",
+          "Pyrimidine",
+          "Phenyl (with caution)"
+        ]
+      }
+    }
+  }
+}
