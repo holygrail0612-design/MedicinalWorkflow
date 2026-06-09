@@ -781,6 +781,53 @@
                 <!-- Process Optimization & Safety (Restored) -->
                 <div id="content-process-safety" class="sub-content hidden fade-in">
                     <h3 class="text-2xl font-bold text-slate-800 mb-6"><i class="fa-solid fa-triangle-exclamation text-secondary mr-2"></i>Process Optimization & Safety Assessment</h3>
+                    
+                    <!-- Top Widgets: Risk Score & Quick Quench -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                        <!-- Reaction Risk Score Card -->
+                        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-slate-700 flex justify-between items-center mb-4">
+                                    Reaction Risk Score
+                                    <span id="process-risk-badge" class="px-2 py-0.5 rounded text-[10px] bg-slate-100 text-slate-400">WAITING</span>
+                                </h4>
+                                <div class="flex items-end gap-3 mb-4">
+                                    <div id="process-risk-value" class="text-5xl font-black text-slate-300">0</div>
+                                    <div class="text-xs text-slate-400 font-bold mb-1">/ 100</div>
+                                </div>
+                                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden mb-4">
+                                    <div id="process-risk-bar" class="bg-slate-300 h-full transition-all duration-500" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <p id="process-risk-msg" class="text-[11px] text-slate-500 italic">시동 물질(S.M)과 시약을 입력하면 위험도가 계산됩니다.</p>
+                        </div>
+
+                        <!-- Quench Assistant Widget -->
+                        <div class="lg:col-span-2 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-700 mb-4 flex items-center">
+                                <i class="fa-solid fa-faucet-drip text-secondary mr-2"></i>Quench Assistant
+                            </h4>
+                            <div class="flex gap-4 mb-4">
+                                <div class="flex-1">
+                                    <select id="quench-reagent-select" class="w-full p-3 rounded-xl border border-slate-200 outline-none focus:border-secondary font-bold text-sm bg-slate-50">
+                                        <option value="">위험 시약 선택 (Quench Guide)</option>
+                                        <option value="nbuli">n-BuLi (n-Butyllithium)</option>
+                                        <option value="nah">NaH (Sodium Hydride)</option>
+                                        <option value="liah4">LiAlH4 (LAH)</option>
+                                        <option value="tfa">TFA / 강산 (Acid)</option>
+                                        <option value="pdc">Pd/C (젖은 상태 여과)</option>
+                                        <option value="sodium">Metallic Na / K</option>
+                                        <option value="mg">Grignard Reagents</option>
+                                    </select>
+                                </div>
+                                <button onclick="generateQuenchGuide()" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition shadow-md">가이드 생성</button>
+                            </div>
+                            <div id="quench-guide-display" class="bg-slate-50 rounded-2xl p-4 min-h-[100px] border border-dashed border-slate-300 flex items-center justify-center text-center">
+                                <p class="text-xs text-slate-400">위험 시약을 선택하고 가이드 생성 버튼을 누르세요.</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-white p-6 rounded-3xl border border-slate-200">
                             <h4 class="font-bold text-lg border-b pb-2 mb-4 text-slate-700">Scale-up Safety Checklist</h4>
@@ -1539,6 +1586,8 @@
                                     <div class="mt-4 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
                                         <button id="btn-link-kosha" class="text-[10px] bg-slate-100 hover:bg-orange-100 text-slate-600 px-2 py-1 rounded font-bold transition">MSDS 검색 (KOSHA)</button>
                                         <button id="btn-link-itis" class="text-[10px] bg-slate-100 hover:bg-blue-100 text-slate-600 px-2 py-1 rounded font-bold transition">화학물질정보 (ITis)</button>
+                                        <button onclick="window.open(`https://www.tcichemicals.com/KR/ko/search/?keyword=${document.getElementById('ehs-res-cas').innerText}`, '_blank')" class="text-[10px] bg-blue-50 text-blue-700 px-2 py-1 rounded font-bold transition border border-blue-200"><i class="fa-solid fa-cart-shopping mr-1"></i> TCI 시약 단가 확인</button>
+                                        <button onclick="window.open(`https://www.sigmaaldrich.com/KR/ko/search/${document.getElementById('ehs-res-cas').innerText}`, '_blank')" class="text-[10px] bg-green-50 text-green-700 px-2 py-1 rounded font-bold transition border border-green-200"><i class="fa-solid fa-flask mr-1"></i> Sigma 검색</button>
                                     </div>
                                 </div>
 
@@ -1615,6 +1664,14 @@
                                         <div class="font-bold text-xs text-slate-700">국가법령정보</div>
                                     </a>
                                 </div>
+                            </div>
+
+                            <!-- Sponsorship Banner -->
+                            <div class="mt-8 bg-slate-50 border border-dashed border-slate-300 rounded-2xl p-6 text-center group hover:bg-slate-100 transition cursor-pointer">
+                                <p class="text-sm font-bold text-slate-400 group-hover:text-slate-600">
+                                    <i class="fa-solid fa-bullhorn mr-1"></i> 이곳에 귀사의 연구 장비/시약 배너를 광고하세요.
+                                </p>
+                                <p class="text-xs text-slate-400 mt-1">광고 및 제휴 문의: your-email@naver.com</p>
                             </div>
                             
                             <!-- Card 5: PPE -->
@@ -11073,6 +11130,7 @@
                     <i class="fa-solid fa-bolt text-secondary group-hover:text-white text-[9px]"></i>
                 </button>
             `).join('');
+            updateProcessRiskScore();
         }
 
         function insertReagentName(name) {
@@ -11708,6 +11766,7 @@
                     <div class="text-[10px] text-slate-400">${chemIntelDB[k].type || 'Reagent'}</div>
                 </button>
             `).join('');
+            updateProcessRiskScore();
         }
 
         function loadIntel(key) {
@@ -11881,6 +11940,7 @@
                     <div class="text-[10px] text-slate-400">${chemIntelDB[k].type || 'Reagent'}</div>
                 </button>
             `).join('');
+            updateProcessRiskScore();
         }
 
         function filterIntel(type) {
@@ -12035,6 +12095,7 @@
                     <i class="fa-solid fa-chevron-right text-slate-200 group-hover:text-tertiary transition-all text-xs"></i>
                 </button>
             `).join('');
+            updateProcessRiskScore();
         }
 
         function loadTLC(type) {
@@ -12096,6 +12157,7 @@
                     <td class="p-3 font-bold ${s.ich.includes('Class 2') ? 'text-red-500' : 'text-green-500'}">${s.ich}</td>
                 </tr>
             `).join('');
+            updateProcessRiskScore();
         }
 
         const nmrData = {
@@ -12171,6 +12233,7 @@
                     <td class="p-3 text-slate-600">${n.d}</td>
                 </tr>
             `).join('');
+            updateProcessRiskScore();
         }
 
         // --- 4. NEW: EHS & Compliance System ---
@@ -13564,6 +13627,311 @@
             if (level < 10) level = 10;
             document.getElementById('vw-tank-level').style.height = `${level}%`;
         }
+function generateQuenchGuide() {
+    const select = document.getElementById('quench-reagent-select');
+    const display = document.getElementById('quench-guide-display');
+    const val = select.value;
+
+    if (!val) {
+        display.innerHTML = '<p class="text-xs text-slate-400">위험 시약을 선택하고 가이드 생성 버튼을 누르세요.</p>';
+        return;
+    }
+
+    // Using the existing quenchProtocols object defined around L2614
+    let steps = quenchProtocols[val];
+
+    // For other reagents we added in the HTML select but not in quenchProtocols originally
+    if (val === 'tfa' && !steps) steps = ["반응 온도를 0°C로 낮춥니다.", "Sat. NaHCO3 수용액을 pH 7-8이 될 때까지 극도로 천천히 적가합니다 (CO2 가스 대량 발생 주의).", "분별 깔때기로 유기층을 분리합니다."];
+    if (val === 'pdc' && !steps) steps = ["Celite pad를 통해 현탁액을 여과합니다.", "Filter cake가 마르지 않도록 주의하며 용매(Ethyl acetate 또는 Methanol)로 씻어줍니다.", "젖은 Filter cake는 즉시 물에 적신 후 폐기 용기에 보관합니다 (건조 시 자연 발화 위험)."];
+    if (val === 'sodium' && !steps) steps = ["반응 후 남은 금속 Na/K 덩어리를 t-Butanol 또는 Isopropanol에 조각내어 천천히 투입합니다.", "수소 가스 발생이 멈출 때까지 기다립니다.", "Methanol을 가한 후 마지막에 물을 첨가하여 완전히 분해합니다."];
+    if (val === 'mg' && !steps) steps = ["반응 혼합물을 0°C로 냉각합니다.", "Sat. NH4Cl 수용액을 천천히 적가하여 Quenching 합니다 (1M HCl 사용 가능하나 산에 민감한 화합물 주의).", "침전물이 생기면 10% 구연산 또는 약간의 산을 가하여 녹입니다."];
+
+    if (!steps) steps = ["선택한 시약에 대한 구체적인 Quench 가이드가 없습니다. MSDS를 참조하십시오."];
+
+    let html = `<div class="text-left w-full"><h5 class="font-bold text-sm text-secondary mb-2"><i class="fa-solid fa-clipboard-check mr-1"></i>안전 Quench 절차 (${select.options[select.selectedIndex].text})</h5><ol class="list-decimal list-inside space-y-2 text-sm text-slate-700">`;
+    steps.forEach(step => {
+        html += `<li class="border-b border-dashed border-slate-200 pb-1">${step}</li>`;
+    });
+    html += `</ol></div>`;
+
+    display.innerHTML = html;
+}
+
+function updateProcessRiskScore() {
+    // Gather reagents from stoichiometry table
+    const reagentInputs = document.querySelectorAll('#stoich-rows-container .row-name');
+    let totalRisk = 0;
+    let riskFactors = [];
+
+    reagentInputs.forEach(input => {
+        const name = input.value.trim().toLowerCase();
+        if (!name) return;
+
+        // Simple risk heuristic for V1
+        if (name.includes('n-buli') || name.includes('buli')) { totalRisk += 40; riskFactors.push('Pyrophoric (n-BuLi)'); }
+        if (name.includes('nah')) { totalRisk += 30; riskFactors.push('Water-Reactive (NaH)'); }
+        if (name.includes('lah') || name.includes('lialh4')) { totalRisk += 35; riskFactors.push('Strong Reductant (LAH)'); }
+        if (name.includes('pd/c') || name.includes('pd')) { totalRisk += 20; riskFactors.push('Pyrophoric Hazard (Pd/C)'); }
+        if (name.includes('tfa')) { totalRisk += 15; riskFactors.push('Corrosive/Gas Evolution (TFA)'); }
+        if (name.includes('sodium') || name.includes('na ')) { totalRisk += 25; riskFactors.push('Water-Reactive (Metal)'); }
+        if (name.includes('cyanide') || name.includes('cn')) { totalRisk += 50; riskFactors.push('Highly Toxic (Cyanide)'); }
+        if (name.includes('azide') || name.includes('n3')) { totalRisk += 45; riskFactors.push('Explosive Hazard (Azide)'); }
+        if (name.includes('h2o2') || name.includes('peroxide')) { totalRisk += 25; riskFactors.push('Strong Oxidizer'); }
+    });
+
+    // Normalize score
+    if (totalRisk > 100) totalRisk = 100;
+
+    const badge = document.getElementById('process-risk-badge');
+    const valueDisplay = document.getElementById('process-risk-value');
+    const bar = document.getElementById('process-risk-bar');
+    const msg = document.getElementById('process-risk-msg');
+
+    valueDisplay.textContent = totalRisk;
+    bar.style.width = `${totalRisk}%`;
+
+    if (totalRisk === 0) {
+        badge.className = "px-2 py-0.5 rounded text-[10px] bg-slate-100 text-slate-400";
+        badge.textContent = "SAFE";
+        bar.className = "h-full transition-all duration-500 bg-slate-300";
+        msg.textContent = "현재 입력된 시약은 비교적 안전합니다.";
+    } else if (totalRisk < 30) {
+        badge.className = "px-2 py-0.5 rounded text-[10px] bg-emerald-100 text-emerald-600 font-bold";
+        badge.textContent = "LOW RISK";
+        bar.className = "h-full transition-all duration-500 bg-emerald-400";
+        msg.textContent = `위험 요소: ${riskFactors.join(', ')}`;
+    } else if (totalRisk < 70) {
+        badge.className = "px-2 py-0.5 rounded text-[10px] bg-amber-100 text-amber-600 font-bold";
+        badge.textContent = "MODERATE RISK";
+        bar.className = "h-full transition-all duration-500 bg-amber-400";
+        msg.textContent = `주의 요망: ${riskFactors.join(', ')}`;
+    } else {
+        badge.className = "px-2 py-0.5 rounded text-[10px] bg-red-100 text-red-600 font-bold";
+        badge.textContent = "HIGH RISK";
+        bar.className = "h-full transition-all duration-500 bg-red-500";
+        msg.innerHTML = `<span class="text-red-500 font-bold"><i class="fa-solid fa-triangle-exclamation"></i> 치명적 위험 요소 포함:</span> ${riskFactors.join(', ')}`;
+    }
+}
+
+function copyAccount(elementId, btnElement) {
+    const text = document.getElementById(elementId).innerText.replace(/-/g, '');
+    navigator.clipboard.writeText(text).then(() => {
+        const originalHtml = btnElement.innerHTML;
+        btnElement.innerHTML = '<i class="fa-solid fa-check text-green-500 mr-1"></i> 복사됨';
+        btnElement.classList.add('bg-green-50', 'text-green-600', 'border-green-200');
+        setTimeout(() => {
+            btnElement.innerHTML = originalHtml;
+            btnElement.classList.remove('bg-green-50', 'text-green-600', 'border-green-200');
+        }, 2000);
+    });
+}
+
+function copyEmail(elementId, btnElement) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        const originalHtml = btnElement.innerHTML;
+        btnElement.innerHTML = '<i class="fa-solid fa-check text-green-500"></i>';
+        btnElement.classList.add('bg-green-50', 'text-green-600', 'border-green-200');
+        setTimeout(() => {
+            btnElement.innerHTML = originalHtml;
+            btnElement.classList.remove('bg-green-50', 'text-green-600', 'border-green-200');
+        }, 2000);
+    });
+}
+
+let currentTargetEmail = '';
+function openEmailForm(email) {
+    currentTargetEmail = email;
+    document.getElementById('contact-modal').classList.replace('flex', 'hidden');
+    document.getElementById('email-form-modal').classList.replace('hidden', 'flex');
+}
+
+function submitEmailForm() {
+    const subject = document.getElementById('email-subject').value;
+    const body = document.getElementById('email-body').value;
+    
+    if(!subject || !body) {
+        alert('제목과 내용을 모두 입력해 주세요.');
+        return;
+    }
+    
+    const mailtoLink = `mailto:${currentTargetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+    
+    // Reset and close
+    document.getElementById('email-subject').value = '';
+    document.getElementById('email-body').value = '';
+    document.getElementById('email-form-modal').classList.replace('flex', 'hidden');
+}
 </script>
+
+<!-- Email Writing Modal -->
+<div id="email-form-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-[110] fade-in">
+    <div class="bg-white rounded-3xl max-w-lg w-full mx-4 shadow-2xl overflow-hidden relative border border-white/20">
+        <div class="bg-slate-800 p-6 flex justify-between items-center text-white">
+            <h3 class="font-bold flex items-center gap-2"><i class="fa-solid fa-pen-to-square"></i> 의견 작성하기</h3>
+            <button onclick="document.getElementById('email-form-modal').classList.replace('flex', 'hidden')" class="text-slate-400 hover:text-white transition">
+                <i class="fa-solid fa-times text-xl"></i>
+            </button>
+        </div>
+        <div class="p-8 space-y-5">
+            <div>
+                <label class="block text-xs font-bold text-slate-500 mb-2 ml-1">제목</label>
+                <input type="text" id="email-subject" placeholder="어떤 내용인가요?" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 text-sm focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-300">
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-slate-500 mb-2 ml-1">내용</label>
+                <textarea id="email-body" rows="6" placeholder="연구원님의 소중한 의견을 자유롭게 적어주세요.&#10;버그 제보의 경우 상황을 자세히 설명해 주시면 큰 도움이 됩니다." class="w-full border border-slate-200 rounded-2xl px-5 py-4 text-sm focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all resize-none placeholder:text-slate-300 leading-relaxed"></textarea>
+            </div>
+            <div class="pt-2">
+                <button onclick="submitEmailForm()" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 rounded-2xl shadow-lg shadow-blue-200 transition-all transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-paper-plane"></i> 보내기
+                </button>
+                <p class="text-[11px] text-slate-400 text-center mt-4 italic">※ '보내기' 클릭 시 개발자에게 메일이 전달됩니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-[100] fade-in">
+    <div class="bg-white rounded-3xl max-w-md w-full mx-4 shadow-2xl overflow-hidden relative border border-white/20">
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-8 text-center relative">
+            <button onclick="document.getElementById('contact-modal').classList.replace('flex', 'hidden')" class="absolute top-4 right-4 text-white/50 hover:text-white transition">
+                <i class="fa-solid fa-times text-xl"></i>
+            </button>
+            <div class="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mx-auto mb-4 text-white text-3xl shadow-lg border border-white/20">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">의견 제안 및 문의</h3>
+            <p class="text-sm text-blue-100">툴킷 개선을 위한 아이디어, 기능 추가 요청,<br>또는 버그 리포트를 언제든 환영합니다.</p>
+        </div>
+        
+        <div class="p-8 bg-slate-50 space-y-4">
+            <!-- Naver Mail Button -->
+            <button onclick="openEmailForm('gsb0612@naver.com')" class="w-full group bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-md transition-all flex justify-between items-center outline-none">
+                <div class="text-left">
+                    <div class="text-xs font-bold text-slate-500 mb-1">메인 문의 채널 (Naver)</div>
+                    <div class="font-bold text-slate-800 text-sm tracking-tight">의견 작성하고 보내기</div>
+                </div>
+                <div class="w-10 h-10 bg-blue-100 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-xl flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+            </button>
+
+            <!-- Gmail Button -->
+            <button onclick="openEmailForm('holygrail0612@gmail.com')" class="w-full group bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-indigo-400 hover:shadow-md transition-all flex justify-between items-center outline-none">
+                <div class="text-left">
+                    <div class="text-xs font-bold text-slate-500 mb-1">기술 지원 및 제안 (Gmail)</div>
+                    <div class="font-bold text-slate-800 text-sm tracking-tight">의견 작성하고 보내기</div>
+                </div>
+                <div class="w-10 h-10 bg-indigo-100 group-hover:bg-indigo-600 text-indigo-600 group-hover:text-white rounded-xl flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+            </button>
+
+            <div class="mt-6 text-center">
+                <p class="text-xs text-slate-400 mb-4">보내주신 소중한 의견은 꼼꼼히 읽고 반영하겠습니다.</p>
+                <button onclick="document.getElementById('contact-modal').classList.replace('flex', 'hidden')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 rounded-xl transition">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Premium Donation Modal -->
+<div id="donation-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-[100] fade-in">
+    <div class="bg-white rounded-3xl max-w-md w-full mx-4 shadow-2xl overflow-hidden relative border border-white/20">
+        <!-- Header with Gradient -->
+        <div class="bg-gradient-to-r from-slate-800 to-slate-900 p-8 text-center relative">
+            <button onclick="document.getElementById('donation-modal').classList.replace('flex', 'hidden')" class="absolute top-4 right-4 text-white/50 hover:text-white transition">
+                <i class="fa-solid fa-times text-xl"></i>
+            </button>
+            <div class="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mx-auto mb-4 text-yellow-400 text-3xl shadow-lg border border-white/20">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">툴킷 개발 & 운영 후원</h3>
+            <p class="text-sm text-slate-300">연구원님들의 후원은 더 혁신적인 기능 업데이트와<br>안정적인 서비스 유지에 사용됩니다.</p>
+        </div>
+        
+        <!-- Body -->
+        <div class="p-8 bg-slate-50 space-y-4">
+            <!-- KakaoPay QR Section (Primary) -->
+            <div class="bg-white p-6 rounded-2xl border-2 border-yellow-400 shadow-sm flex flex-col items-center gap-3">
+                <div class="flex items-center gap-2 mb-1 w-full justify-center">
+                    <img src="https://img.icons8.com/color/48/000000/kakaotalk.png" class="w-5 h-5" alt="Kakao">
+                    <span class="text-xs font-black text-slate-800 tracking-tighter">카카오페이 QR 송금</span>
+                </div>
+                <div class="w-48 h-48 bg-white rounded-2xl border-2 border-yellow-100 flex items-center justify-center relative overflow-hidden group shadow-inner">
+                    <img src="KakaoTalk_20260609_095858820.png" class="w-full h-full object-contain p-2" alt="KakaoPay QR">
+                    <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                </div>
+                <p class="text-[10px] text-slate-500 text-center leading-tight mt-1">
+                    카카오톡 앱에서 위 QR을 스캔하시면<br>간편하게 송금이 가능합니다.
+                </p>
+            </div>
+
+            <!-- Secondary Action Button -->
+            <button id="toggle-accounts-btn" onclick="document.getElementById('accounts-section').classList.toggle('hidden'); this.classList.add('hidden');" class="w-full py-3 px-4 bg-white border border-slate-200 rounded-xl text-xs font-bold text-slate-500 hover:bg-slate-100 transition-all flex items-center justify-center gap-2 outline-none">
+                <i class="fa-solid fa-ellipsis"></i> 다른 방법으로 후원하기 (계좌 이체)
+            </button>
+
+            <!-- Accounts Section (Hidden by default) -->
+            <div id="accounts-section" class="hidden space-y-3 animate-slide-up">
+                <div class="flex items-center gap-2 py-1">
+                    <div class="h-[1px] bg-slate-200 flex-grow"></div>
+                    <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest px-2">계좌 이체 정보</span>
+                    <div class="h-[1px] bg-slate-200 flex-grow"></div>
+                </div>
+
+                <!-- Account 1 -->
+                <div class="group bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover:border-yellow-400 hover:shadow-md transition-all flex justify-between items-center cursor-default">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                            <span class="text-xs font-bold text-slate-500">카카오뱅크 (예금주: 고*배)</span>
+                        </div>
+                        <div class="font-mono font-bold text-slate-800 text-lg tracking-wider" id="acc-kakao">3333-11-2693528</div>
+                    </div>
+                    <button onclick="copyAccount('acc-kakao', this)" class="bg-slate-100 hover:bg-yellow-50 text-slate-600 hover:text-yellow-600 px-4 py-2 rounded-xl text-sm font-bold transition-colors">
+                        <i class="fa-regular fa-copy mr-1"></i> 복사
+                    </button>
+                </div>
+                
+                <!-- Account 2 -->
+                <div class="group bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover:border-green-500 hover:shadow-md transition-all flex justify-between items-center cursor-default">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                            <span class="text-xs font-bold text-slate-500">농협 (예금주: 고*배)</span>
+                        </div>
+                        <div class="font-mono font-bold text-slate-800 text-lg tracking-wider" id="acc-nh">302-1716-8230-41</div>
+                    </div>
+                    <button onclick="copyAccount('acc-nh', this)" class="bg-slate-100 hover:bg-green-50 text-slate-600 hover:text-green-600 px-4 py-2 rounded-xl text-sm font-bold transition-colors">
+                        <i class="fa-regular fa-copy mr-1"></i> 복사
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <p class="text-xs text-slate-400 mb-4"><i class="fa-solid fa-shield-heart mr-1 text-pink-400"></i> 소중한 후원에 진심으로 감사드립니다.</p>
+                <button onclick="document.getElementById('donation-modal').classList.replace('flex', 'hidden'); document.getElementById('accounts-section').classList.add('hidden'); document.getElementById('toggle-accounts-btn').classList.remove('hidden');" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 rounded-xl transition">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Floating Actions Container -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 fade-in items-end">
+    <!-- Contact Button -->
+    <button onclick="document.getElementById('contact-modal').classList.replace('hidden', 'flex')" class="bg-slate-800 hover:bg-slate-900 text-white font-black px-4 py-3 rounded-full shadow-2xl transition-all transform hover:-translate-y-1 flex items-center border-2 border-slate-700 outline-none group">
+        <i class="fa-solid fa-paper-plane mr-2 text-blue-400 group-hover:text-blue-300 transition"></i> 
+        <span class="text-sm">의견 제안 · 문의</span>
+    </button>
+    <!-- Donation Button -->
+    <button onclick="document.getElementById('donation-modal').classList.replace('hidden', 'flex')" class="bg-yellow-400 hover:bg-yellow-500 text-slate-800 font-black px-5 py-3 rounded-full shadow-2xl transition-all transform hover:-translate-y-1 flex items-center border-2 border-yellow-300 outline-none">
+        <i class="fa-solid fa-mug-hot mr-2 text-xl"></i> 
+        <span class="text-sm">개발자 커피 후원하기</span>
+    </button>
+</div>
 </body>
 </html>
