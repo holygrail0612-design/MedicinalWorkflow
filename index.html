@@ -76,7 +76,7 @@
         <!-- Header -->
         <header class="text-center mb-10 fade-in">
             <h1 class="text-4xl md:text-5xl font-black text-slate-800 tracking-tight mb-2">신약개발 통합 프로세스 <span class="text-primary">OS</span></h1>
-            <p class="text-slate-500 font-medium tracking-wide">AI 기반 연구 및 스케일업 워크스페이스 <span class="ml-2 px-2 py-0.5 bg-slate-100 text-slate-400 rounded-md text-[10px] font-black">v100</span></p>
+            <p class="text-slate-500 font-medium tracking-wide">AI 기반 연구 및 스케일업 워크스페이스 <span class="ml-2 px-2 py-0.5 bg-slate-100 text-slate-400 rounded-md text-[10px] font-black">v118</span></p>
         </header>
 
         <!-- Main Navigation -->
@@ -106,13 +106,60 @@
             <!-- ============================================== -->
             <div id="section-medchem" class="main-section hidden">
                 <div class="flex gap-2 border-b-2 border-slate-100 pb-4 mb-6 overflow-x-auto">
+                    <button onclick="setSubTab('medchem', 'intelligence')" id="sub-medchem-intelligence" class="sub-nav-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold text-sm transition-all">문헌 및 지식 탐색</button>
                     <button onclick="setSubTab('medchem', 'design')" id="sub-medchem-design" class="sub-nav-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold text-sm transition-all">화합물 설계 및 최적화</button>
                     <button onclick="setSubTab('medchem', 'sar')" id="sub-medchem-sar" class="sub-nav-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold text-sm transition-all">구조-활성 분석(SAR)</button>
-                    <button onclick="setSubTab('medchem', 'inventory')" id="sub-medchem-inventory" class="sub-nav-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold text-sm transition-all">화합물 재고 관리</button>
-                    <button onclick="setSubTab('medchem', 'intelligence')" id="sub-medchem-intelligence" class="sub-nav-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold text-sm transition-all">신약 개발 지능 탐색</button>
+                    <button onclick="setSubTab('medchem', 'inventory')" id="sub-medchem-inventory" class="sub-nav-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold text-sm transition-all">프로젝트 진행 및 스케줄 보드</button>
                 </div>
 
-                <div id="content-medchem-design" class="sub-content grid grid-cols-1 xl:grid-cols-12 gap-6 fade-in">
+                <!-- 문헌 탐색 Sub Content (Moved to First) -->
+                <div id="content-medchem-intelligence" class="sub-content hidden fade-in">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Scaffold Library -->
+                        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2"><i class="fa-solid fa-cubes text-primary mr-2"></i>Scaffold Library</h3>
+                            <p class="text-sm text-slate-500 mb-6">골격을 검색하여 대표 약물, 대사 특성, SAR 장단점을 확인하세요.</p>
+                            <div class="relative mb-4">
+                                <input type="text" placeholder="Scaffold 입력 (예: Pyridine, Quinoline)" class="w-full p-4 pl-12 border border-slate-200 rounded-xl text-sm outline-none focus:border-primary font-bold shadow-sm">
+                                <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-lg text-slate-400"></i>
+                            </div>
+                            <div class="bg-slate-50 border border-slate-100 rounded-xl p-6 flex-1 flex flex-col items-center justify-center text-center">
+                                <i class="fa-solid fa-layer-group text-4xl text-slate-300 mb-3"></i>
+                                <p class="text-sm text-slate-500 font-bold mb-1">Example: Pyridine 검색 시</p>
+                                <ul class="text-xs text-slate-400 space-y-1">
+                                    <li><i class="fa-solid fa-check text-green-500 mr-1"></i> 수용성 향상 (Basic N)</li>
+                                    <li><i class="fa-solid fa-check text-green-500 mr-1"></i> 대사 안정성 개선</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation text-amber-500 mr-1"></i> CYP 억제 가능성 주의</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Literature & Patent Landscape -->
+                        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2"><i class="fa-solid fa-book-open-reader text-primary mr-2"></i>Literature & Patent Landscape</h3>
+                            <p class="text-sm text-slate-500 mb-6">질환 또는 구조 기반 특허/문헌 AI 검색</p>
+                            
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 mb-4">
+                                <label class="block text-xs font-bold text-slate-600 mb-2 uppercase tracking-wider">Target / Disease Area</label>
+                                <div class="flex gap-2">
+                                    <input type="text" id="med-search-keyword" placeholder="e.g., EGFR inhibitor" class="flex-1 p-3 rounded-lg border border-slate-200 outline-none text-sm focus:border-primary">
+                                    <button onclick="generateAIQuery()" class="bg-slate-800 text-white px-4 rounded-lg font-bold text-sm hover:bg-slate-700 transition flex items-center"><i class="fa-solid fa-robot mr-2"></i>AI 쿼리</button>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 flex-1 mb-4">
+                                <button onclick="executeMedSearch('pubmed')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-blue-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-book-medical text-2xl text-blue-500 mb-2"></i>PubMed</button>
+                                <button onclick="executeMedSearch('scholar')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-blue-600 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-graduation-cap text-2xl text-blue-800 mb-2"></i>Scholar</button>
+                                <button onclick="executeMedSearch('patent')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-yellow-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-file-signature text-2xl text-yellow-500 mb-2"></i>Patents</button>
+                                <button onclick="executeMedSearch('kipris')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-green-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-building-columns text-2xl text-green-600 mb-2"></i>KIPRIS</button>
+                                <button onclick="executeMedSearch('pubchem')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-purple-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-cubes text-2xl text-purple-500 mb-2"></i>PubChem</button>
+                            </div>
+                            
+                            <button class="w-full bg-slate-800 text-white py-3 rounded-xl font-bold text-sm hover:bg-slate-700 transition shadow-md flex items-center justify-center"><i class="fa-solid fa-chart-area mr-2 text-primary"></i>구조 기반 특허 위험도 분석 (FTO)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-medchem-design" class="sub-content hidden grid grid-cols-1 xl:grid-cols-12 gap-6 fade-in">
                     <!-- JSME Area -->
                     <div class="xl:col-span-8 flex flex-col h-full space-y-4">
                         <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex-1 flex flex-col">
@@ -140,71 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- v59: SAR Intelligence & Public DB Panel -->
-                        <div class="bg-white rounded-2xl p-6 border-2 border-indigo-50 shadow-md">
-                            <div class="flex justify-between items-center mb-4">
-                                <h4 class="font-black text-slate-800"><i class="fa-solid fa-atom text-primary mr-2"></i>SAR Intelligence Design (EDG/EWG)</h4>
-                                <button onclick="analyzeSarIntelligence()" class="bg-primary text-white px-4 py-1.5 rounded-lg text-xs font-black hover:shadow-lg transition">구조 정밀 분석 실행</button>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                                    <span class="text-[10px] font-black text-blue-400 uppercase tracking-widest block mb-2">Electronic Effect (EDG)</span>
-                                    <div id="sar-res-edg" class="text-xs text-blue-700 font-bold leading-relaxed">-</div>
-                                </div>
-                                <div class="bg-red-50 p-4 rounded-xl border border-red-100">
-                                    <span class="text-[10px] font-black text-red-400 uppercase tracking-widest block mb-2">Electronic Effect (EWG)</span>
-                                    <div id="sar-res-ewg" class="text-xs text-red-700 font-bold leading-relaxed">-</div>
-                                </div>
-                                <div class="bg-teal-50 p-4 rounded-xl border border-teal-100">
-                                    <span class="text-[10px] font-black text-teal-400 uppercase tracking-widest block mb-2">H-Bond Network</span>
-                                    <div id="sar-res-hbond" class="text-xs text-teal-700 font-bold leading-relaxed">-</div>
-                                </div>
-                            </div>
-                            <div class="mt-4 p-4 bg-slate-900 rounded-xl">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest">Public Database Deep-Link (API)</span>
-                                    <span class="text-[9px] text-primary font-bold">SMILES Matching</span>
-                                </div>
-                                <div class="flex flex-wrap gap-2">
-                                    <button onclick="openPublicDb('pubchem')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">PubChem</button>
-                                    <button onclick="openPublicDb('chembl')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">ChEMBL</button>
-                                    <button onclick="openPublicDb('drugbank')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">DrugBank</button>
-                                </div>
-                            </div>
-                        </div>
-                            <!-- SAR Intelligence Design Panel (New in v59) -->
-                            <div class="bg-white rounded-2xl p-6 border-2 border-indigo-50 shadow-md">
-                                <div class="flex justify-between items-center mb-4">
-                                    <h4 class="font-black text-slate-800"><i class="fa-solid fa-atom text-primary mr-2"></i>SAR Intelligence Design & Vector Analysis</h4>
-                                    <button onclick="analyzeSarIntelligence()" class="bg-primary text-white px-4 py-1.5 rounded-lg text-xs font-black hover:shadow-lg transition">구조 정밀 분석 실행</button>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                                        <span class="text-[10px] font-black text-blue-400 uppercase tracking-widest block mb-2">Electronic Effect (EDG)</span>
-                                        <div id="sar-res-edg" class="text-xs text-blue-700 font-bold leading-relaxed">-</div>
-                                    </div>
-                                    <div class="bg-red-50 p-4 rounded-xl border border-red-100">
-                                        <span class="text-[10px] font-black text-red-400 uppercase tracking-widest block mb-2">Electronic Effect (EWG)</span>
-                                        <div id="sar-res-ewg" class="text-xs text-red-700 font-bold leading-relaxed">-</div>
-                                    </div>
-                                    <div class="bg-teal-50 p-4 rounded-xl border border-teal-100">
-                                        <span class="text-[10px] font-black text-teal-400 uppercase tracking-widest block mb-2">H-Bond Network</span>
-                                        <div id="sar-res-hbond" class="text-xs text-teal-700 font-bold leading-relaxed">-</div>
-                                    </div>
-                                </div>
-                                <div class="mt-4 p-4 bg-slate-900 rounded-xl">
-                                    <div class="flex justify-between items-center mb-3">
-                                        <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest">Public Database Deep-Link (API)</span>
-                                        <span class="text-[9px] text-primary font-bold">Real-time Matching</span>
-                                    </div>
-                                    <div class="flex flex-wrap gap-2">
-                                        <button onclick="openPublicDb('pubchem')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">PubChem Search</button>
-                                        <button onclick="openPublicDb('chembl')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">ChEMBL Bioactivity</button>
-                                        <button onclick="openPublicDb('drugbank')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">DrugBank Reference</button>
-                                        <button onclick="openPublicDb('zinc')" class="bg-slate-800 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold border border-slate-700 transition">ZINC Library</button>
-                                    </div>
-                                </div>
-                            </div>
+                        
                             <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-md">
                             <div class="flex justify-between items-center mb-6">
                                 <h3 class="text-xl font-bold text-slate-800"><i class="fa-solid fa-layer-group text-primary mr-2"></i>Scaffold Library & Drug Reference</h3>
@@ -340,101 +323,81 @@
                     </div>
                 </div>
                 <div id="content-medchem-inventory" class="sub-content hidden fade-in">
-                    <div class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm">
-                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-slate-800"><i class="fa-solid fa-boxes-stacked text-primary mr-2"></i>Chemical Inventory Intelligence</h3>
-                                <p class="text-slate-500 text-sm mt-1">단순 재고를 넘어선 스마트 시약/화합물 관리 시스템</p>
-                            </div>
-                            <div class="flex gap-2 w-full md:w-auto">
-                                <input type="text" placeholder="시약명, CAS, 위치 검색..." class="p-3 border border-slate-200 rounded-xl text-sm outline-none focus:border-primary flex-1 md:w-64">
-                                <button class="bg-primary text-white px-5 py-3 rounded-xl font-bold text-sm shadow-md hover:bg-indigo-700 transition">검색</button>
+                    <div class="grid grid-cols-1 xl:grid-cols-12 gap-6">
+                        <!-- Left: Synthesis Progress Tracker -->
+                        <div class="xl:col-span-8 space-y-6">
+                            <div class="bg-white p-6 md:p-8 rounded-[2.5rem] border border-slate-200 shadow-sm h-full min-h-[750px]">
+                                <div class="flex justify-between items-center mb-8">
+                                    <div>
+                                        <h3 class="text-2xl font-black text-slate-800"><i class="fa-solid fa-list-check text-primary mr-3"></i>Synthesis Tracker</h3>
+                                        <p class="text-sm text-slate-400 mt-1 font-medium">프로젝트를 클릭하여 우측 상세 정보를 관리하세요.</p>
+                                    </div>
+                                    <button onclick="addNewProjectItem()" class="bg-slate-900 text-white px-6 py-2.5 rounded-2xl font-black text-sm hover:scale-105 transition shadow-lg">
+                                        <i class="fa-solid fa-plus mr-2"></i>새 프로젝트 추가
+                                    </button>
+                                </div>
+
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-left border-separate border-spacing-y-3">
+                                        <thead>
+                                            <tr class="text-[10px] font-black text-slate-400 uppercase tracking-widest px-4">
+                                                <th class="pb-2 pl-6">ID / Structure</th>
+                                                <th class="pb-2">Progress Status</th>
+                                                <th class="pb-2">Schedule / Milestones</th>
+                                                <th class="pb-2 text-center">Data Mapping</th>
+                                                <th class="pb-2 text-right pr-6">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="project-tracker-body"></tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                            <!-- Inventory Card 1 (Alert) -->
-                            <div class="border border-slate-200 rounded-2xl p-5 bg-white relative shadow-sm hover:shadow-md transition">
-                                <span class="absolute top-4 right-4 text-[10px] font-black text-amber-600 bg-amber-100 border border-amber-200 px-2.5 py-1 rounded-full animate-pulse">Expiry Alert</span>
-                                <h4 class="font-black text-slate-800 text-xl mb-1">HATU</h4>
-                                <p class="text-xs font-mono text-slate-400 mb-4">CAS: 148893-10-1</p>
-                                <div class="text-sm space-y-2">
-                                    <p class="flex items-center"><i class="fa-solid fa-location-dot w-5 text-slate-400"></i> <span class="font-bold text-slate-600 mr-2">위치:</span> Cabinet C-1 (냉장)</p>
-                                    <p class="flex items-center"><i class="fa-solid fa-flask w-5 text-slate-400"></i> <span class="font-bold text-slate-600 mr-2">재고:</span> 15 g</p>
-                                    <div class="bg-red-50 p-2 rounded-lg mt-2 border border-red-100">
-                                        <p class="text-xs text-red-600 font-bold mb-0.5"><i class="fa-solid fa-clock-rotate-left mr-1"></i> 개봉일: 2025-08-10</p>
-                                        <p class="text-[10px] text-red-500">권장 유효기간 초과 - 교체 검토 요망</p>
+
+                        <!-- Right: Linked Detail & Notes -->
+                        <div class="xl:col-span-4 space-y-6 flex flex-col relative" id="right-panel-wrapper">
+                            <!-- Global Overlay for the Entire Right Column -->
+                            <div id="no-project-selected" class="absolute inset-0 bg-slate-100/95 backdrop-blur-sm z-50 flex flex-col items-center justify-center text-slate-500 rounded-[2.5rem] text-center mx-1 mt-1 mb-1 border-2 border-dashed border-slate-300">
+                                <i class="fa-solid fa-arrow-pointer text-5xl mb-4 text-indigo-400 animate-bounce"></i>
+                                <h4 class="font-black text-lg mb-2 text-slate-700">프로젝트를 선택하세요</h4>
+                                <p class="text-xs font-bold leading-relaxed">왼쪽 리스트에서 행을 클릭하면<br>해당 프로젝트의 스케줄과 노트가 활성화됩니다.</p>
+                            </div>
+
+                            <!-- Project Detail Board -->
+                            <div id="project-detail-panel" class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-[2rem] border border-indigo-100 shadow-sm flex flex-col relative overflow-hidden h-[450px]">
+                                <div class="flex justify-between items-center mb-6">
+                                    <div class="min-w-0">
+                                        <h4 class="font-black text-slate-800 flex items-center text-sm">
+                                            <i class="fa-solid fa-calendar-days text-indigo-500 mr-2"></i>Project Board
+                                        </h4>
+                                        <div id="selected-project-id-display" class="text-[10px] font-black text-indigo-500 mt-1 uppercase tracking-wider truncate">SELECT A PROJECT</div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Inventory Card 2 -->
-                            <div class="border border-slate-200 rounded-2xl p-5 bg-white relative shadow-sm hover:shadow-md transition">
-                                <h4 class="font-black text-slate-800 text-xl mb-1">Boc2O</h4>
-                                <p class="text-xs font-mono text-slate-400 mb-4">CAS: 24424-99-5</p>
-                                <div class="text-sm space-y-2">
-                                    <p class="flex items-center"><i class="fa-solid fa-location-dot w-5 text-slate-400"></i> <span class="font-bold text-slate-600 mr-2">위치:</span> Cabinet B-3</p>
-                                    <p class="flex items-center"><i class="fa-solid fa-flask w-5 text-slate-400"></i> <span class="font-bold text-slate-600 mr-2">재고:</span> 25 g</p>
-                                    <p class="flex items-center"><i class="fa-solid fa-calendar-check w-5 text-slate-400"></i> <span class="font-bold text-slate-600 mr-2">최근 사용:</span> 2026-06-01</p>
-                                    <div class="bg-blue-50 p-2 rounded-lg mt-2 border border-blue-100">
-                                        <p class="text-xs text-blue-600 font-bold"><i class="fa-solid fa-cart-shopping mr-1"></i> 예상 소진: 3주 후 (주문 권장)</p>
-                                    </div>
+                                
+                                <div id="schedule-board-list" class="space-y-3 flex-1 overflow-y-auto pr-2 custom-scrollbar min-h-0"></div>
+
+                                <div class="mt-4 pt-4 border-t border-indigo-100">
+                                    <h5 class="font-black text-slate-700 text-[10px] mb-2 uppercase tracking-widest text-center">Auto-Added from Notes</h5>
                                 </div>
                             </div>
-                            <!-- Add Card -->
-                            <div class="border-2 border-slate-200 border-dashed rounded-2xl p-5 flex flex-col items-center justify-center text-slate-400 hover:bg-slate-50 hover:text-primary hover:border-primary transition cursor-pointer min-h-[200px]">
-                                <i class="fa-solid fa-circle-plus text-4xl mb-3 opacity-50"></i>
-                                <span class="font-bold">신규 화합물/시약 등록</span>
-                                <span class="text-xs mt-1">바코드 스캔 또는 수동 입력</span>
+
+                            <!-- Real-time Global Notes -->
+                            <div class="bg-slate-900 p-6 rounded-[2rem] shadow-xl text-white flex flex-col flex-1 min-h-[350px]">
+                                <h4 class="font-bold mb-4 flex items-center text-sm"><i class="fa-solid fa-note-sticky text-amber-400 mr-2"></i>Real-time Research Notes</h4>
+                                <div class="space-y-3 flex-1 flex flex-col min-h-0">
+                                    <textarea id="new-research-note" placeholder="메모를 입력하면 위 보드에 자동 등록됩니다..." class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-xs text-slate-300 outline-none focus:border-amber-400 h-20 shrink-0 transition leading-relaxed"></textarea>
+                                    <button onclick="saveResearchNoteToSchedule()" class="w-full bg-amber-500 text-slate-900 font-black py-2 rounded-xl text-xs hover:bg-amber-400 transition shadow-lg shrink-0">메모 저장 및 스케줄 등록</button>
+                                    
+                                    <div id="research-note-feed" class="space-y-3 mt-4 pt-4 border-t border-slate-800 overflow-y-auto pr-2 flex-1 custom-scrollbar">
+                                        <div class="text-[10px] text-slate-500 text-center italic py-10">프로젝트를 선택하세요.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Intelligence Sub Content -->
-                <div id="content-medchem-intelligence" class="sub-content hidden fade-in">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <!-- Scaffold Library -->
-                        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
-                            <h3 class="text-xl font-bold text-slate-800 mb-2"><i class="fa-solid fa-cubes text-primary mr-2"></i>Scaffold Library</h3>
-                            <p class="text-sm text-slate-500 mb-6">골격을 검색하여 대표 약물, 대사 특성, SAR 장단점을 확인하세요.</p>
-                            <div class="relative mb-4">
-                                <input type="text" placeholder="Scaffold 입력 (예: Pyridine, Quinoline)" class="w-full p-4 pl-12 border border-slate-200 rounded-xl text-sm outline-none focus:border-primary font-bold shadow-sm">
-                                <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-lg text-slate-400"></i>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-100 rounded-xl p-6 flex-1 flex flex-col items-center justify-center text-center">
-                                <i class="fa-solid fa-layer-group text-4xl text-slate-300 mb-3"></i>
-                                <p class="text-sm text-slate-500 font-bold mb-1">Example: Pyridine 검색 시</p>
-                                <ul class="text-xs text-slate-400 space-y-1">
-                                    <li><i class="fa-solid fa-check text-green-500 mr-1"></i> 수용성 향상 (Basic N)</li>
-                                    <li><i class="fa-solid fa-check text-green-500 mr-1"></i> 대사 안정성 개선</li>
-                                    <li><i class="fa-solid fa-triangle-exclamation text-amber-500 mr-1"></i> CYP 억제 가능성 주의</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Literature & Patent Landscape -->
-                        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
-                            <h3 class="text-xl font-bold text-slate-800 mb-2"><i class="fa-solid fa-book-open-reader text-primary mr-2"></i>Literature & Patent Landscape</h3>
-                            <p class="text-sm text-slate-500 mb-6">질환 또는 구조 기반 특허/문헌 AI 검색</p>
-                            
-                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 mb-4">
-                                <label class="block text-xs font-bold text-slate-600 mb-2 uppercase tracking-wider">Target / Disease Area</label>
-                                <div class="flex gap-2">
-                                    <input type="text" id="med-search-keyword" placeholder="e.g., EGFR inhibitor" class="flex-1 p-3 rounded-lg border border-slate-200 outline-none text-sm focus:border-primary">
-                                    <button onclick="generateAIQuery()" class="bg-slate-800 text-white px-4 rounded-lg font-bold text-sm hover:bg-slate-700 transition flex items-center"><i class="fa-solid fa-robot mr-2"></i>AI 쿼리</button>
-                                </div>
-                            </div>
-                            
-                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 flex-1 mb-4">
-                                <button onclick="executeMedSearch('pubmed')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-blue-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-book-medical text-2xl text-blue-500 mb-2"></i>PubMed</button>
-                                <button onclick="executeMedSearch('scholar')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-blue-600 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-graduation-cap text-2xl text-blue-800 mb-2"></i>Scholar</button>
-                                <button onclick="executeMedSearch('patent')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-yellow-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-file-signature text-2xl text-yellow-500 mb-2"></i>Patents</button>
-                                <button onclick="executeMedSearch('kipris')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-green-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-building-columns text-2xl text-green-600 mb-2"></i>KIPRIS</button>
-                                <button onclick="executeMedSearch('pubchem')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-purple-400 transition text-center text-[10px] font-bold text-slate-700 shadow-sm flex flex-col items-center justify-center"><i class="fa-solid fa-cubes text-2xl text-purple-500 mb-2"></i>PubChem</button>
-                            </div>
-                            
-                            <button class="w-full bg-slate-800 text-white py-3 rounded-xl font-bold text-sm hover:bg-slate-700 transition shadow-md flex items-center justify-center"><i class="fa-solid fa-chart-area mr-2 text-primary"></i>구조 기반 특허 위험도 분석 (FTO)</button>
-                        </div>
-                    </div>
-                </div>
+                <!-- Removed duplicated Intelligence Sub Content -->
             </div>
 <!-- ============================================== -->
             <!-- 2. Process Chem Section -->
@@ -2667,7 +2630,7 @@
         // --- State Management ---
         const state = {
             main: 'medchem',
-            sub: { medchem: 'design', process: 'reaction', knowledge: 'tlc', ehs: 'search', utilities: 'pdf' }
+            sub: { medchem: 'intelligence', process: 'reaction', knowledge: 'tlc', ehs: 'search', utilities: 'pdf' }
         };
 
         const themes = {
@@ -13749,20 +13712,232 @@ function openEmailForm(email) {
 function submitEmailForm() {
     const subject = document.getElementById('email-subject').value;
     const body = document.getElementById('email-body').value;
-    
+
     if(!subject || !body) {
         alert('제목과 내용을 모두 입력해 주세요.');
         return;
     }
-    
+
     const mailtoLink = `mailto:${currentTargetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
-    
+
     // Reset and close
     document.getElementById('email-subject').value = '';
     document.getElementById('email-body').value = '';
     document.getElementById('email-form-modal').classList.replace('flex', 'hidden');
 }
+
+        // --- v121: Customizable ID, Date, Robust Event Delegation & Error Handling ---
+        let currentSelectedProjectUid = null;
+
+        function saveTrackerData() {
+            const projects = document.getElementById('project-tracker-body').innerHTML;
+            localStorage.setItem('project_tracker_v121', projects);
+        }
+
+        function loadTrackerData() {
+            const projects = localStorage.getItem('project_tracker_v121');
+            if (projects) {
+                document.getElementById('project-tracker-body').innerHTML = projects;
+            }
+            deselectProject();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tbody = document.getElementById('project-tracker-body');
+            if(tbody) {
+                tbody.addEventListener('click', function(e) {
+                    // 삭제 버튼 등 특정 액션 버튼 클릭 시 행 선택 이벤트 방지
+                    if(e.target.closest('button')) return;
+                    
+                    const row = e.target.closest('.project-row');
+                    if(row) {
+                        const uid = row.getAttribute('data-uid');
+                        selectProject(uid, row);
+                    }
+                });
+            }
+            loadTrackerData();
+        });
+
+        function addNewProjectItem() {
+            const uid = `uid-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+            const displayId = `PJ-${new Date().getTime().toString().slice(-4)}`;
+            const today = new Date().toISOString().split('T')[0];
+            const smiles = jsmeApplet ? jsmeApplet.smiles() : "";
+            const imgUrl = smiles ? `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${encodeURIComponent(smiles)}/PNG` : "";
+            
+            const tbody = document.getElementById('project-tracker-body');
+            const tr = document.createElement('tr');
+            tr.className = "project-row bg-slate-50/50 hover:bg-slate-100 hover:shadow-md transition-all rounded-2xl group border-2 border-transparent cursor-pointer fade-in";
+            tr.setAttribute('data-uid', uid);
+
+            tr.innerHTML = `
+                <td class="py-4 pl-6 rounded-l-2xl">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-white rounded-xl border border-slate-200 flex items-center justify-center p-1 overflow-hidden shadow-inner shrink-0">
+                            ${imgUrl ? `<img src="${imgUrl}" class="w-full h-full object-contain">` : `<i class="fa-solid fa-flask text-slate-200 text-xl"></i>`}
+                        </div>
+                        <div class="flex flex-col gap-1 min-w-0">
+                            <input type="text" oninput="saveTrackerData()" class="bg-transparent border-none p-0 focus:ring-0 text-xs font-black text-slate-800 w-24 placeholder:text-slate-400" value="${displayId}" placeholder="ID 입력">
+                            <input type="date" oninput="saveTrackerData()" class="bg-transparent border-none p-0 focus:ring-0 text-[9px] font-mono text-slate-400 w-24 h-4 cursor-pointer" value="${today}">
+                            <span class="block text-[8px] text-slate-400 truncate max-w-[80px]" title="${smiles}">${smiles || 'No Structure'}</span>
+                        </div>
+                    </div>
+                </td>
+                <td class="py-4">
+                    <div class="flex flex-col gap-1 w-32">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="status-label text-[8px] font-black text-indigo-600 uppercase">Idea</span>
+                        </div>
+                        <div class="w-full h-1 bg-slate-200 rounded-full overflow-hidden">
+                            <div class="progress-bar h-full bg-indigo-500 rounded-full transition-all duration-500" style="width: 10%"></div>
+                        </div>
+                        <div class="flex gap-0.5 mt-1">
+                            <button onclick="updateProjectStatus(this, 'Idea', 10)" class="status-btn text-[7px] px-1 py-0.5 bg-indigo-100 text-indigo-600 rounded-sm font-bold">I</button>
+                            <button onclick="updateProjectStatus(this, 'Synth', 40)" class="status-btn text-[7px] px-1 py-0.5 bg-white text-slate-400 border border-slate-200 rounded-sm font-bold">S</button>
+                            <button onclick="updateProjectStatus(this, 'Purify', 70)" class="status-btn text-[7px] px-1 py-0.5 bg-white text-slate-400 border border-slate-200 rounded-sm font-bold">P</button>
+                            <button onclick="updateProjectStatus(this, 'Assay', 100)" class="status-btn text-[7px] px-1 py-0.5 bg-white text-slate-400 border border-slate-200 rounded-sm font-bold">A</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="py-4 px-2">
+                    <textarea oninput="saveTrackerData()" class="w-full bg-white/50 border border-slate-200 rounded-lg p-1 text-[10px] font-bold text-slate-600 focus:bg-white focus:ring-1 focus:ring-indigo-400 resize-none h-10 scrollbar-hide" placeholder="Milestones..."></textarea>
+                </td>
+                <td class="py-4 text-center">
+                    <input type="text" oninput="saveTrackerData()" class="bg-white/50 border border-slate-200 rounded-md text-[9px] font-mono font-bold text-slate-500 w-20 text-center px-1 py-1 outline-none focus:bg-white focus:border-indigo-400" placeholder="Data ID">
+                </td>
+                <td class="py-4 pr-6 rounded-r-2xl text-right">
+                    <button onclick="if(confirm('이 프로젝트를 삭제할까요?')){this.closest('tr').remove(); deselectProject(); saveTrackerData();}" class="p-2 bg-white border border-slate-200 hover:bg-red-50 hover:border-red-200 rounded-lg transition text-slate-400 hover:text-red-500 shadow-sm"><i class="fa-solid fa-trash-can text-xs"></i></button>
+                </td>
+            `;
+            tbody.prepend(tr);
+            saveTrackerData();
+            selectProject(uid, tr);
+        }
+
+        function selectProject(uid, rowElement) {
+            currentSelectedProjectUid = uid;
+            
+            // 시각적 피드백: 선택된 행 스타일 변경
+            document.querySelectorAll('.project-row').forEach(r => {
+                r.classList.remove('border-indigo-500', 'bg-indigo-50', 'shadow-md');
+                r.classList.add('border-transparent', 'bg-slate-50/50');
+            });
+            if(rowElement) {
+                rowElement.classList.remove('border-transparent', 'bg-slate-50/50');
+                rowElement.classList.add('border-indigo-500', 'bg-indigo-50', 'shadow-md');
+                
+                // 표시용 ID 추출하여 상단에 보여주기
+                const displayIdInput = rowElement.querySelector('input[type="text"]');
+                const displayId = displayIdInput ? displayIdInput.value : 'UNKNOWN';
+                document.getElementById('selected-project-id-display').innerText = `EDITING PROJECT: ${displayId}`;
+            }
+            
+            // 안내 가림막(Overlay) 완전히 제거 (CSS 충돌 방지)
+            const overlay = document.getElementById('no-project-selected');
+            if(overlay) overlay.style.display = 'none';
+            
+            loadSelectedProjectData(uid);
+        }
+
+        function deselectProject() {
+            currentSelectedProjectUid = null;
+            document.querySelectorAll('.project-row').forEach(r => {
+                r.classList.remove('border-indigo-500', 'bg-indigo-50', 'shadow-md');
+                r.classList.add('border-transparent', 'bg-slate-50/50');
+            });
+            
+            const overlay = document.getElementById('no-project-selected');
+            if(overlay) overlay.style.display = 'flex';
+            
+            document.getElementById('selected-project-id-display').innerText = `NO PROJECT SELECTED`;
+        }
+
+        function saveResearchNoteToSchedule() {
+            const noteInput = document.getElementById('new-research-note');
+            const noteText = noteInput.value.trim();
+            if (!noteText) {
+                alert('기록할 내용을 입력하세요.');
+                return;
+            }
+            if (!currentSelectedProjectUid) {
+                alert('왼쪽 리스트에서 프로젝트를 먼저 클릭해 주세요.');
+                return;
+            }
+
+            // 1. 스케줄 보드에 즉시 추가
+            const list = document.getElementById('schedule-board-list');
+            const item = document.createElement('div');
+            item.className = "p-3 bg-white rounded-xl border border-indigo-100 shadow-sm relative group fade-in mb-2 border-l-4 border-l-indigo-400";
+            item.innerHTML = `
+                <button onclick="this.parentElement.remove(); saveSelectedProjectData();" class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition text-slate-300 hover:text-red-500"><i class="fa-solid fa-times text-[10px]"></i></button>
+                <p class="text-[11px] text-slate-700 font-bold leading-relaxed">${noteText.replace(/\n/g, '<br>')}</p>
+                <span class="text-[8px] text-slate-400 mt-1 block font-mono">${new Date().toLocaleString()}</span>
+            `;
+            list.prepend(item);
+
+            // 2. 하단 메모 피드에 복사본 추가 (로그용)
+            const feed = document.getElementById('research-note-feed');
+            const placeholder = feed.querySelector('.italic');
+            if (placeholder) placeholder.remove(); // 처음 작성 시 "프로젝트를 선택하세요" 안내문구 제거
+
+            const noteDiv = document.createElement('div');
+            noteDiv.className = "bg-slate-800/50 p-3 rounded-xl border border-slate-700 fade-in mb-2";
+            noteDiv.innerHTML = `<p class="text-[10px] text-slate-300 leading-relaxed">${noteText.replace(/\n/g, '<br>')}</p>`;
+            feed.prepend(noteDiv);
+
+            noteInput.value = '';
+            saveSelectedProjectData();
+        }
+
+        function saveSelectedProjectData() {
+            if (!currentSelectedProjectUid) return;
+            const data = {
+                scheduleHtml: document.getElementById('schedule-board-list').innerHTML,
+                feedHtml: document.getElementById('research-note-feed').innerHTML
+            };
+            localStorage.setItem(`project_data_v121_${currentSelectedProjectUid}`, JSON.stringify(data));
+        }
+
+        function loadSelectedProjectData(uid) {
+            try {
+                const raw = localStorage.getItem(`project_data_v121_${uid}`);
+                const list = document.getElementById('schedule-board-list');
+                const feed = document.getElementById('research-note-feed');
+                
+                if (raw) {
+                    const data = JSON.parse(raw);
+                    list.innerHTML = data.scheduleHtml || "";
+                    feed.innerHTML = data.feedHtml || "";
+                } else {
+                    list.innerHTML = "";
+                    feed.innerHTML = '<div class="text-[10px] text-slate-500 text-center italic py-10">새로운 기록을 시작하세요.</div>';
+                }
+            } catch (error) {
+                console.error("데이터 로딩 중 에러 발생:", error);
+            }
+        }
+
+        function updateProjectStatus(btn, status, percent) {
+            const container = btn.closest('td');
+            const label = container.querySelector('.status-label');
+            const progress = container.querySelector('.progress-bar');
+            const btns = container.querySelectorAll('.status-btn');
+            
+            label.innerText = status;
+            progress.style.width = `${percent}%`;
+            
+            btns.forEach(b => {
+                b.classList.remove('bg-indigo-100', 'text-indigo-600', 'border-transparent');
+                b.classList.add('bg-white', 'text-slate-400', 'border', 'border-slate-200');
+            });
+            
+            btn.classList.remove('bg-white', 'text-slate-400', 'border', 'border-slate-200');
+            btn.classList.add('bg-indigo-100', 'text-indigo-600', 'border-transparent');
+            
+            saveTrackerData();
+        }
 </script>
 
 <!-- Email Writing Modal -->
