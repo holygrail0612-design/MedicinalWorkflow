@@ -66,8 +66,13 @@
         .nfpa-text.white-bg { color: #000; }
         .nfpa-text:not(.white-bg) { color: #fff; }
     </style>
-    <!-- PDF-Lib for Client-side PDF Manipulation -->
+    <!-- PDF-Lib, PDF.js & SheetJS -->
     <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
 </head>
 <body class="text-slate-800">
 
@@ -76,7 +81,7 @@
         <!-- Header -->
         <header class="text-center mb-10 fade-in">
             <h1 class="text-4xl md:text-5xl font-black text-slate-800 tracking-tight mb-2">신약개발 통합 프로세스 <span class="text-primary">OS</span></h1>
-            <p class="text-slate-500 font-medium tracking-wide">AI 기반 연구 및 스케일업 워크스페이스 <span class="ml-2 px-2 py-0.5 bg-slate-100 text-slate-400 rounded-md text-[10px] font-black">v118</span></p>
+            <p class="text-slate-500 font-medium tracking-wide">AI 기반 연구 및 스케일업 워크스페이스 <span class="ml-2 px-2 py-0.5 bg-slate-100 text-slate-400 rounded-md text-[10px] font-black">v126</span></p>
         </header>
 
         <!-- Main Navigation -->
@@ -2058,24 +2063,120 @@
 
                     <!-- Restored v90: Classic Action Grids -->
                     <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm mb-6">
-                        <h3 class="text-xl font-bold text-slate-800 mb-4"><i class="fa-solid fa-file-pdf text-emerald-600 mr-2"></i>PDF Tools</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <button onclick="handlePdfAction('PDF 합치기')" class="p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold text-slate-800"><i class="fa-solid fa-file-pdf text-emerald-600 mr-2"></i>PDF Tools</h3>
+                            <div id="pdf-status-indicator" class="hidden px-3 py-1 bg-emerald-100 text-emerald-600 rounded-lg text-[10px] font-black animate-pulse">
+                                CONFIGURING...
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <button onclick="handlePdfAction('PDF 합치기')" class="pdf-tool-btn p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
                                 <i class="fa-solid fa-object-group text-3xl text-emerald-400 group-hover:text-emerald-600 mb-2 transition"></i>
                                 <span class="block font-bold text-sm text-slate-700">PDF 합치기</span>
                             </button>
-                            <button onclick="handlePdfAction('PDF 분할')" class="p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
+                            <button onclick="handlePdfAction('PDF 분할')" class="pdf-tool-btn p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
                                 <i class="fa-solid fa-scissors text-3xl text-emerald-400 group-hover:text-emerald-600 mb-2 transition"></i>
                                 <span class="block font-bold text-sm text-slate-700">PDF 분할</span>
                             </button>
-                            <button onclick="handlePdfAction('PDF 압축')" class="p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
+                            <button onclick="handlePdfAction('PDF 압축')" class="pdf-tool-btn p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
                                 <i class="fa-solid fa-compress text-3xl text-emerald-400 group-hover:text-emerald-600 mb-2 transition"></i>
                                 <span class="block font-bold text-sm text-slate-700">PDF 압축</span>
                             </button>
-                            <button onclick="handlePdfAction('PDF 회전')" class="p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
+                            <button onclick="handlePdfAction('PDF 회전')" class="pdf-tool-btn p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
                                 <i class="fa-solid fa-rotate-right text-3xl text-emerald-400 group-hover:text-emerald-600 mb-2 transition"></i>
                                 <span class="block font-bold text-sm text-slate-700">PDF 회전</span>
                             </button>
+                        </div>
+
+                        <!-- NEW: Configuration Area for specific tools -->
+                        <div id="pdf-config-area" class="hidden p-6 bg-slate-50 border-2 border-dashed border-emerald-100 rounded-[2rem] fade-in">
+                            <div id="config-split" class="hidden">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="w-2 h-6 bg-emerald-500 rounded-full"></div>
+                                    <h4 class="font-black text-slate-800">PDF 분할 설정</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 mb-4 leading-relaxed">추출할 페이지 번호를 입력하세요. (쉼표 구분 또는 범위 지정 가능)<br>예: <span class="font-mono bg-white px-1.5 py-0.5 rounded border text-emerald-600 font-bold">1, 3, 5-10, 12</span></p>
+                                <div class="flex gap-3">
+                                    <input type="text" id="pdf-split-range" placeholder="예: 1-3, 5" class="flex-1 p-4 border border-slate-200 rounded-2xl outline-none focus:ring-4 focus:ring-emerald-50 font-mono font-bold text-emerald-700">
+                                    <button onclick="executeConfiguredPdfAction()" class="bg-emerald-600 text-white px-8 rounded-2xl font-black hover:bg-emerald-700 transition shadow-lg">작업 실행</button>
+                                </div>
+                            </div>
+
+                            <div id="config-rotate" class="hidden">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="w-2 h-6 bg-emerald-500 rounded-full"></div>
+                                    <h4 class="font-black text-slate-800">PDF 회전 설정</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 mb-4">모든 페이지를 선택한 각도로 회전시킵니다.</p>
+                                <div class="flex gap-3">
+                                    <select id="pdf-rotate-degree" class="flex-1 p-4 border border-slate-200 rounded-2xl outline-none bg-white font-bold text-slate-700">
+                                        <option value="90">90도 시계방향</option>
+                                        <option value="180">180도</option>
+                                        <option value="270">270도 시계방향 (90도 반시계)</option>
+                                    </select>
+                                    <button onclick="executeConfiguredPdfAction()" class="bg-emerald-600 text-white px-8 rounded-2xl font-black hover:bg-emerald-700 transition shadow-lg">작업 실행</button>
+                                </div>
+                            </div>
+
+                            <div id="config-compress" class="hidden">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="w-2 h-6 bg-emerald-500 rounded-full"></div>
+                                    <h4 class="font-black text-slate-800">PDF 압축 설정</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 mb-4">파일의 품질을 조절하여 용량을 줄입니다. (브라우저 환경 최적화)</p>
+                                <div class="flex gap-3">
+                                    <select id="pdf-compress-level" class="flex-1 p-4 border border-slate-200 rounded-2xl outline-none bg-white font-bold text-slate-700">
+                                        <option value="basic">기본 압축 (권장)</option>
+                                        <option value="high">최대 압축 (품질 저하 가능)</option>
+                                    </select>
+                                    <button onclick="executeConfiguredPdfAction()" class="bg-emerald-600 text-white px-8 rounded-2xl font-black hover:bg-emerald-700 transition shadow-lg">작업 실행</button>
+                                </div>
+                            </div>
+
+                            <div id="config-merge" class="hidden">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="w-2 h-6 bg-emerald-500 rounded-full"></div>
+                                    <h4 class="font-black text-slate-800">PDF 합치기 준비 완료</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 mb-4">상단 스테이징 영역에 추가된 순서대로 파일이 합쳐집니다.</p>
+                                <button onclick="executeConfiguredPdfAction()" class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-black hover:bg-emerald-700 transition shadow-lg">선택한 파일 모두 합치기</button>
+                            </div>
+
+                            <div id="config-to-word" class="hidden">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="w-2 h-6 bg-blue-500 rounded-full"></div>
+                                    <h4 class="font-black text-slate-800">PDF → Word 변환 설정</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 mb-4 leading-relaxed">PDF 내부의 텍스트를 추출하여 Word(.docx) 파일로 변환합니다.<br><span class="text-amber-600 font-bold">※ 이미지 형태의 PDF는 OCR 기능이 필요합니다.</span></p>
+                                <div class="flex gap-3">
+                                    <div class="flex-1 p-4 bg-white border border-slate-200 rounded-2xl text-xs font-bold text-slate-400 flex items-center justify-center">기본 설정 (텍스트 레이아웃 보존)</div>
+                                    <button onclick="executeConfiguredPdfAction()" class="bg-blue-600 text-white px-8 rounded-2xl font-black hover:bg-blue-700 transition shadow-lg">Word로 변환</button>
+                                </div>
+                            </div>
+
+                            <div id="config-to-excel" class="hidden">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="w-2 h-6 bg-green-500 rounded-full"></div>
+                                    <h4 class="font-black text-slate-800">PDF → Excel 변환 설정</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 mb-4 leading-relaxed">PDF 내부의 테이블 및 수치 데이터를 추출하여 Excel(.xlsx)로 변환합니다.<br><span class="text-emerald-600 font-bold">공정 보고서 및 분석 결과 정리에 최적화되어 있습니다.</span></p>
+                                <div class="flex gap-3">
+                                    <select id="pdf-excel-mode" class="flex-1 p-4 border border-slate-200 rounded-2xl outline-none bg-white font-bold text-slate-700">
+                                        <option value="auto">자동 감지 (권장)</option>
+                                        <option value="raw">행별 데이터 추출</option>
+                                    </select>
+                                    <button onclick="executeConfiguredPdfAction()" class="bg-emerald-600 text-white px-8 rounded-2xl font-black hover:bg-emerald-700 transition shadow-lg">Excel로 변환</button>
+                                </div>
+                            </div>
+
+                            <!-- NEW: Visual Page Gallery for Split & Rotate -->
+                            <div id="pdf-page-gallery" class="hidden mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 pt-8 border-t border-slate-200">
+                                <!-- Page thumbnails will be injected here -->
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                             <button onclick="handlePdfAction('PDF → Word')" class="p-4 border border-slate-200 rounded-2xl hover:border-emerald-500 hover:shadow-md transition text-center group">
                                 <i class="fa-solid fa-file-word text-3xl text-blue-500 mb-2 transition"></i>
                                 <span class="block font-bold text-sm text-slate-700">PDF → Word</span>
@@ -12952,8 +13053,10 @@
         };
 
         
-        // --- v92: Advanced PDF Manipulation Logic (Staging-Aware) ---
+        // --- v124: Visual PDF Manipulation Logic (Staging-Aware) ---
         let fileSlotCount = 0;
+        let currentPdfAction = null;
+        let pageStates = []; // Array of { selected: bool, rotation: 0 }
 
         function addFileSlot() {
             const container = document.getElementById('pdf-file-list');
@@ -13003,98 +13106,321 @@
         }
 
         async function handlePdfAction(action) {
+            currentPdfAction = action;
+            const configArea = document.getElementById('pdf-config-area');
+            const statusIndicator = document.getElementById('pdf-status-indicator');
+            const gallery = document.getElementById('pdf-page-gallery');
+            
+            // Reset config panels
+            document.querySelectorAll('#pdf-config-area > div').forEach(div => div.classList.add('hidden'));
+            gallery.classList.add('hidden');
+            gallery.innerHTML = '';
+            
+            // Check if files are selected
             const fileInputs = Array.from(document.querySelectorAll('#pdf-file-list input[type="file"]'));
             let files = fileInputs.map(input => input.files[0]).filter(f => f);
 
             if (files.length === 0) {
-                const input = document.createElement('input');
-                input.type = 'file';
-                input.multiple = (action === 'PDF 합치기' || action === 'Image → PDF');
-                input.accept = (action === 'Image → PDF' || action === 'PPT → PDF') ? '.jpg,.jpeg,.png,.webp,.pptx' : '.pdf';
-                
-                input.onchange = async (e) => {
-                    const manualFiles = Array.from(e.target.files);
-                    if (manualFiles.length > 0) {
-                        processPdfTask(action, manualFiles);
-                    }
-                };
-                input.click();
+                alert("먼저 스테이징 영역에 처리할 PDF 파일을 추가해주세요.");
                 return;
             }
 
-            processPdfTask(action, files);
+            // Show relevant config panel
+            configArea.classList.remove('hidden');
+            statusIndicator.classList.remove('hidden');
+            
+            if (action === 'PDF 분할') {
+                document.getElementById('config-split').classList.remove('hidden');
+                renderPdfThumbnails(files[0]);
+            } else if (action === 'PDF 회전') {
+                document.getElementById('config-rotate').classList.remove('hidden');
+                renderPdfThumbnails(files[0]);
+            } else if (action === 'PDF 압축') {
+                document.getElementById('config-compress').classList.remove('hidden');
+            } else if (action === 'PDF 합치기') {
+                document.getElementById('config-merge').classList.remove('hidden');
+            } else if (action === 'PDF → Word') {
+                document.getElementById('config-to-word').classList.remove('hidden');
+            } else if (action === 'PDF → Excel') {
+                document.getElementById('config-to-excel').classList.remove('hidden');
+            } else {
+                alert(action + " 기능은 준비 중입니다.");
+                configArea.classList.add('hidden');
+                statusIndicator.classList.add('hidden');
+            }
         }
 
-        async function processPdfTask(action, files) {
-            const btn = document.querySelector(`button[onclick="handlePdfAction('${action}')"]`);
-            const originalContent = btn ? btn.innerHTML : "Processing";
-            if(btn) {
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i>처리 중...';
-            }
+        async function renderPdfThumbnails(file) {
+            const gallery = document.getElementById('pdf-page-gallery');
+            gallery.classList.remove('hidden');
+            gallery.innerHTML = '<div class="col-span-full py-10 text-center"><i class="fa-solid fa-spinner fa-spin text-3xl text-emerald-500 mb-3"></i><p class="text-sm font-bold text-slate-400">페이지 미리보기 로딩 중...</p></div>';
 
             try {
-                const { PDFDocument } = PDFLib;
-                const resultPdf = await PDFDocument.create();
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                const numPages = pdf.numPages;
+                
+                gallery.innerHTML = '';
+                pageStates = [];
 
-                if (action === 'PDF 합치기' || action === 'Image → PDF' || action === 'PPT → PDF') {
-                    if (files.length < 2 && action === 'PDF 합치기') {
-                        alert("합치기 작업을 위해 최소 2개 이상의 파일을 스테이징 영역에 추가하세요.");
-                        return;
-                    }
-                    for (const file of files) {
-                        const arrayBuffer = await file.arrayBuffer();
-                        const ext = file.name.split('.').pop().toLowerCase();
+                for (let i = 1; i <= numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const viewport = page.getViewport({ scale: 0.3 });
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
 
-                        if (ext === 'pdf') {
-                            const donorPdf = await PDFDocument.load(arrayBuffer);
-                            const pages = await resultPdf.copyPages(donorPdf, donorPdf.getPageIndices());
-                            pages.forEach(page => resultPdf.addPage(page));
-                        } else if (['jpg', 'jpeg', 'png', 'webp'].includes(ext)) {
-                            let img;
-                            if (ext === 'png') img = await resultPdf.embedPng(arrayBuffer);
-                            else img = await resultPdf.embedJpg(arrayBuffer);
-                            const page = resultPdf.addPage([img.width, img.height]);
-                            page.drawImage(img, { x: 0, y: 0, width: img.width, height: img.height });
-                        } else {
-                            alert(`[${file.name}] 은(는) 현재 브라우저 직접 처리가 제한된 형식(Word/PPT 등)입니다. PDF 변환 후 합치기를 권장합니다.`);
-                        }
-                    }
-                } else if (action === 'PDF 분할') {
-                    const file = files[0];
-                    const arrayBuffer = await file.arrayBuffer();
-                    const donorPdf = await PDFDocument.load(arrayBuffer);
-                    const firstPage = await resultPdf.copyPages(donorPdf, [0]);
-                    resultPdf.addPage(firstPage[0]);
-                    alert("데모 버전: 첫 페이지만 분할하여 다운로드합니다.");
-                } else if (action === 'PDF 회전') {
-                    const file = files[0];
-                    const arrayBuffer = await file.arrayBuffer();
-                    const donorPdf = await PDFDocument.load(arrayBuffer);
-                    const pages = await resultPdf.copyPages(donorPdf, donorPdf.getPageIndices());
-                    pages.forEach(page => {
-                        page.setRotation(PDFLib.degrees(90));
-                        resultPdf.addPage(page);
-                    });
-                } else {
-                    alert(action + " 기능은 현재 서버 연동이 필요한 고도화 기능입니다. (준비 중)");
-                    return;
+                    await page.render({ canvasContext: context, viewport: viewport }).promise;
+                    
+                    pageStates.push({ selected: (currentPdfAction === 'PDF 분할' ? false : true), rotation: 0 });
+
+                    const pageDiv = document.createElement('div');
+                    pageDiv.id = `pdf-page-item-${i-1}`;
+                    pageDiv.className = `relative p-2 bg-white rounded-2xl border-2 transition-all cursor-pointer group ${pageStates[i-1].selected ? 'border-emerald-500 ring-2 ring-emerald-100' : 'border-slate-100'}`;
+                    
+                    pageDiv.innerHTML = `
+                        <div class="absolute top-2 left-2 z-10 bg-slate-800/80 text-white w-6 h-6 rounded-lg flex items-center justify-center text-[10px] font-black">${i}</div>
+                        <div class="absolute top-2 right-2 z-10 flex gap-1">
+                            <button onclick="rotatePageThumbnail(${i-1}, event)" class="w-8 h-8 bg-white border border-slate-200 rounded-lg shadow-sm flex items-center justify-center hover:bg-emerald-50 hover:border-emerald-300 transition group/btn">
+                                <i class="fa-solid fa-rotate-right text-xs text-slate-400 group-hover/btn:text-emerald-600"></i>
+                            </button>
+                        </div>
+                        <div class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-50 flex items-center justify-center mb-2" onclick="togglePageThumbnailSelection(${i-1})">
+                            <img src="${canvas.toDataURL()}" class="max-w-full max-h-full transition-transform duration-300 shadow-sm" id="thumb-img-${i-1}">
+                        </div>
+                        <div class="text-center">
+                            <span class="text-[9px] font-black uppercase ${pageStates[i-1].selected ? 'text-emerald-600' : 'text-slate-400'}" id="thumb-label-${i-1}">
+                                ${pageStates[i-1].selected ? 'SELECTED' : 'UNSELECTED'}
+                            </span>
+                        </div>
+                    `;
+                    gallery.appendChild(pageDiv);
                 }
-
-                const pdfBytes = await resultPdf.save();
-                const blob = new Blob([pdfBytes], { type: 'application/pdf' });
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = `Result_${action.replace(' ', '_')}_${new Date().getTime()}.pdf`;
-                link.click();
             } catch (err) {
                 console.error(err);
-                alert("PDF 처리 중 오류가 발생했습니다: " + err.message);
-            } finally {
-                if(btn) {
-                    btn.disabled = false;
-                    btn.innerHTML = originalContent;
+                gallery.innerHTML = '<p class="col-span-full text-red-500 text-center py-10 font-bold">미리보기를 불러오지 못했습니다.</p>';
+            }
+        }
+
+        function togglePageThumbnailSelection(index) {
+            if (currentPdfAction !== 'PDF 분할') return;
+            
+            pageStates[index].selected = !pageStates[index].selected;
+            const item = document.getElementById(`pdf-page-item-${index}`);
+            const label = document.getElementById(`thumb-label-${index}`);
+            
+            if (pageStates[index].selected) {
+                item.className = "relative p-2 bg-white rounded-2xl border-2 border-emerald-500 ring-2 ring-emerald-100 transition-all cursor-pointer group";
+                label.innerText = 'SELECTED';
+                label.className = "text-[9px] font-black uppercase text-emerald-600";
+            } else {
+                item.className = "relative p-2 bg-white rounded-2xl border-2 border-slate-100 transition-all cursor-pointer group";
+                label.innerText = 'UNSELECTED';
+                label.className = "text-[9px] font-black uppercase text-slate-400";
+            }
+
+            // Sync with range input if desired (Optional)
+            const selectedIndices = pageStates.map((s, i) => s.selected ? i + 1 : null).filter(v => v);
+            document.getElementById('pdf-split-range').value = selectedIndices.join(', ');
+        }
+
+        function rotatePageThumbnail(index, event) {
+            event.stopPropagation();
+            pageStates[index].rotation = (pageStates[index].rotation + 90) % 360;
+            const img = document.getElementById(`thumb-img-${index}`);
+            img.style.transform = `rotate(${pageStates[index].rotation}deg)`;
+        }
+
+        async function executeConfiguredPdfAction() {
+            const fileInputs = Array.from(document.querySelectorAll('#pdf-file-list input[type="file"]'));
+            let files = fileInputs.map(input => input.files[0]).filter(f => f);
+            
+            if (files.length === 0) return;
+
+            const config = {};
+            if (currentPdfAction === 'PDF 분할') {
+                config.indices = pageStates.map((s, i) => s.selected ? i : null).filter(i => i !== null);
+                if (config.indices.length === 0) {
+                    // Fallback to text input if no thumbnail selected
+                    const rangeStr = document.getElementById('pdf-split-range').value;
+                    if (!rangeStr) { alert("분할할 페이지를 선택하거나 범위를 입력하세요."); return; }
                 }
+            } else if (currentPdfAction === 'PDF 회전') {
+                config.rotations = pageStates.map(s => s.rotation);
+                config.globalDegree = parseInt(document.getElementById('pdf-rotate-degree').value);
+            } else if (currentPdfAction === 'PDF 압축') {
+                config.level = document.getElementById('pdf-compress-level').value;
+            }
+
+            processPdfTask(currentPdfAction, files, config);
+        }
+
+        function parsePageRange(rangeStr, maxPages) {
+            const pages = new Set();
+            const parts = rangeStr.split(',');
+            for (let part of parts) {
+                part = part.trim();
+                if (part.includes('-')) {
+                    const [start, end] = part.split('-').map(Number);
+                    if (isNaN(start) || isNaN(end)) continue;
+                    for (let i = Math.max(1, start); i <= Math.min(maxPages, end); i++) {
+                        pages.add(i - 1);
+                    }
+                } else {
+                    const p = Number(part);
+                    if (!isNaN(p) && p >= 1 && p <= maxPages) {
+                        pages.add(p - 1);
+                    }
+                }
+            }
+            return Array.from(pages).sort((a, b) => a - b);
+        }
+
+        async function processPdfTask(action, files, config = {}) {
+            const statusIndicator = document.getElementById('pdf-status-indicator');
+            statusIndicator.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i>PROCESSING...';
+            statusIndicator.className = "px-3 py-1 bg-blue-100 text-blue-600 rounded-lg text-[10px] font-black animate-pulse";
+
+            try {
+                const { PDFDocument, degrees } = PDFLib;
+                
+                if (action === 'PDF → Excel') {
+                    const file = files[0];
+                    const arrayBuffer = await file.arrayBuffer();
+                    const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                    let allRows = [];
+
+                    for (let i = 1; i <= pdf.numPages; i++) {
+                        const page = await pdf.getPage(i);
+                        const textContent = await page.getTextContent();
+                        
+                        // Basic table reconstruction logic: group by Y coordinate
+                        const lines = {};
+                        textContent.items.forEach(item => {
+                            const y = Math.round(item.transform[5]); // Y coordinate
+                            if (!lines[y]) lines[y] = [];
+                            lines[y].push({ x: item.transform[4], text: item.str });
+                        });
+
+                        // Sort lines by Y (descending) and items within lines by X (ascending)
+                        const sortedY = Object.keys(lines).sort((a, b) => b - a);
+                        sortedY.forEach(y => {
+                            const row = lines[y].sort((a, b) => a.x - b.x).map(item => item.text);
+                            allRows.push(row);
+                        });
+                    }
+
+                    const wb = XLSX.utils.book_new();
+                    const ws = XLSX.utils.aoa_to_sheet(allRows);
+                    XLSX.utils.book_append_sheet(wb, ws, "Extracted Data");
+                    XLSX.writeFile(wb, `[Toolkit_v126]_Excel_결과.xlsx`);
+                } 
+                else if (action === 'PDF → Word') {
+                    const file = files[0];
+                    const arrayBuffer = await file.arrayBuffer();
+                    const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                    let fullText = "";
+
+                    for (let i = 1; i <= pdf.numPages; i++) {
+                        const page = await pdf.getPage(i);
+                        const textContent = await page.getTextContent();
+                        let lastY = -1;
+                        textContent.items.forEach(item => {
+                            const y = Math.round(item.transform[5]);
+                            if (lastY !== -1 && lastY !== y) fullText += "\n";
+                            fullText += item.str + " ";
+                            lastY = y;
+                        });
+                        fullText += "\n\n--- Page Break ---\n\n";
+                    }
+
+                    // Create a simple Word-compatible HTML blob
+                    const wordHtml = `
+                        <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+                        <head><meta charset='utf-8'></head>
+                        <body style="font-family: Arial, sans-serif; white-space: pre-wrap;">
+                            ${fullText}
+                        </body>
+                        </html>
+                    `;
+                    const blob = new Blob(['\ufeff', wordHtml], { type: 'application/msword' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = `[Toolkit_v126]_Word_결과.doc`;
+                    link.click();
+                }
+                else {
+                    // Existing PDF-Lib logic for Merge, Split, Rotate, Compress
+                    const resultPdf = await PDFDocument.create();
+
+                    if (action === 'PDF 합치기' || action === 'Image → PDF' || action === 'PPT → PDF') {
+                        for (const file of files) {
+                            const arrayBuffer = await file.arrayBuffer();
+                            const ext = file.name.split('.').pop().toLowerCase();
+                            if (ext === 'pdf') {
+                                const donorPdf = await PDFDocument.load(arrayBuffer);
+                                const pages = await resultPdf.copyPages(donorPdf, donorPdf.getPageIndices());
+                                pages.forEach(page => resultPdf.addPage(page));
+                            } else if (['jpg', 'jpeg', 'png', 'webp'].includes(ext)) {
+                                let img;
+                                if (ext === 'png') img = await resultPdf.embedPng(arrayBuffer);
+                                else img = await resultPdf.embedJpg(arrayBuffer);
+                                const page = resultPdf.addPage([img.width, img.height]);
+                                page.drawImage(img, { x: 0, y: 0, width: img.width, height: img.height });
+                            }
+                        }
+                    } else if (action === 'PDF 분할') {
+                        const file = files[0];
+                        const arrayBuffer = await file.arrayBuffer();
+                        const donorPdf = await PDFDocument.load(arrayBuffer);
+                        const indices = config.indices;
+                        const pages = await resultPdf.copyPages(donorPdf, indices);
+                        pages.forEach((page, i) => {
+                            if (pageStates[indices[i]].rotation !== 0) {
+                                page.setRotation(degrees(pageStates[indices[i]].rotation));
+                            }
+                            resultPdf.addPage(page);
+                        });
+                    } else if (action === 'PDF 회전') {
+                        const file = files[0];
+                        const arrayBuffer = await file.arrayBuffer();
+                        const donorPdf = await PDFDocument.load(arrayBuffer);
+                        const pages = await resultPdf.copyPages(donorPdf, donorPdf.getPageIndices());
+                        pages.forEach((page, i) => {
+                            let deg = pageStates[i].rotation;
+                            if (deg === 0) deg = config.globalDegree || 90;
+                            page.setRotation(degrees(deg));
+                            resultPdf.addPage(page);
+                        });
+                    } else if (action === 'PDF 압축') {
+                        const file = files[0];
+                        const arrayBuffer = await file.arrayBuffer();
+                        const donorPdf = await PDFDocument.load(arrayBuffer);
+                        const pages = await resultPdf.copyPages(donorPdf, donorPdf.getPageIndices());
+                        pages.forEach(page => resultPdf.addPage(page));
+                    }
+
+                    const pdfBytes = await resultPdf.save({ useObjectStreams: true });
+                    const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = `[Toolkit_v126]_${action}_결과.pdf`;
+                    link.click();
+                }
+
+                statusIndicator.innerHTML = 'SUCCESS';
+                statusIndicator.className = "px-3 py-1 bg-emerald-100 text-emerald-600 rounded-lg text-[10px] font-black";
+                setTimeout(() => {
+                    statusIndicator.classList.add('hidden');
+                    document.getElementById('pdf-config-area').classList.add('hidden');
+                }, 3000);
+
+            } catch (err) {
+                console.error(err);
+                alert("작업 중 오류가 발생했습니다: " + err.message);
+                statusIndicator.innerHTML = 'ERROR';
+                statusIndicator.className = "px-3 py-1 bg-red-100 text-red-600 rounded-lg text-[10px] font-black";
             }
         }
 
