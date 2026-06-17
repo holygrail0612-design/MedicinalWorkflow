@@ -81,7 +81,7 @@
         <!-- Header -->
         <header class="text-center mb-10 fade-in">
             <h1 class="text-4xl md:text-5xl font-black text-slate-800 tracking-tight mb-2">신약개발 통합 프로세스 <span class="text-primary">OS</span></h1>
-            <p class="text-slate-500 font-medium tracking-wide">AI 기반 연구 및 스케일업 워크스페이스 <span class="ml-2 px-2 py-0.5 bg-slate-100 text-slate-400 rounded-md text-[10px] font-black">v126</span></p>
+            <p class="text-slate-500 font-medium tracking-wide">AI 기반 연구 및 스케일업 워크스페이스 <span class="ml-2 px-2 py-0.5 bg-slate-100 text-slate-400 rounded-md text-[10px] font-black">v128</span></p>
         </header>
 
         <!-- Main Navigation -->
@@ -773,10 +773,11 @@
                         <!-- Quench Assistant Widget -->
                         <div class="lg:col-span-2 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
                             <h4 class="font-bold text-slate-700 mb-4 flex items-center">
-                                <i class="fa-solid fa-faucet-drip text-secondary mr-2"></i>Quench Assistant
-                            </h4>
-                            <div class="flex gap-4 mb-4">
+                                <i class="fa-solid fa-faucet-drip text-secondary mr-2"></i>Quench Assistant & Calculator
+                                </h4>
+                                <div class="flex flex-col md:flex-row gap-4 mb-4">
                                 <div class="flex-1">
+                                    <label class="block text-[10px] font-black text-slate-400 uppercase mb-1">Target Reagent</label>
                                     <select id="quench-reagent-select" class="w-full p-3 rounded-xl border border-slate-200 outline-none focus:border-secondary font-bold text-sm bg-slate-50">
                                         <option value="">위험 시약 선택 (Quench Guide)</option>
                                         <option value="nbuli">n-BuLi (n-Butyllithium)</option>
@@ -788,11 +789,20 @@
                                         <option value="mg">Grignard Reagents</option>
                                     </select>
                                 </div>
-                                <button onclick="generateQuenchGuide()" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition shadow-md">가이드 생성</button>
-                            </div>
-                            <div id="quench-guide-display" class="bg-slate-50 rounded-2xl p-4 min-h-[100px] border border-dashed border-slate-300 flex items-center justify-center text-center">
-                                <p class="text-xs text-slate-400">위험 시약을 선택하고 가이드 생성 버튼을 누르세요.</p>
-                            </div>
+                                <div class="w-full md:w-32">
+                                    <label class="block text-[10px] font-black text-slate-400 uppercase mb-1">Scale (mmol)</label>
+                                    <input type="number" id="quench-mmol-input" step="0.01" placeholder="Auto" class="w-full p-3 rounded-xl border border-slate-200 outline-none focus:border-secondary font-mono text-sm bg-white">
+                                </div>
+                                <div class="flex items-end">
+                                    <button onclick="generateQuenchGuide()" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition shadow-md h-[46px] whitespace-nowrap">계산 및 가이드 생성</button>
+                                </div>
+                                </div>
+                                <div id="quench-guide-display" class="bg-slate-50 rounded-2xl p-5 min-h-[120px] border border-dashed border-slate-300">
+                                <div class="flex flex-col items-center justify-center h-full py-4 text-center">
+                                    <i class="fa-solid fa-calculator text-slate-300 text-3xl mb-2"></i>
+                                    <p class="text-xs text-slate-400">위험 시약과 스케일(mmol)을 확인하고 버튼을 누르세요.<br>입력된 Stoichiometry의 S.M mmol이 자동으로 연동됩니다.</p>
+                                </div>
+                                </div>
                         </div>
                     </div>
 
@@ -826,47 +836,97 @@
                     </div>
                 </div>
 
-                <!-- CMC Module 3 (Restored full checklist) -->
                 <div id="content-process-cmc" class="sub-content hidden fade-in">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm">
-                        <div class="mb-8">
-                            <h3 class="text-2xl font-bold text-slate-800"><i class="fa-solid fa-clipboard-check text-secondary mr-2"></i>CMC Module 3 Checklist</h3>
-                            <p class="text-slate-500 mt-2">Scale-up 및 IND 제출을 위한 기초 공정 데이터 정리 템플릿입니다.</p>
-                        </div>
-                        <div class="space-y-6">
-                            <div class="border border-slate-200 rounded-2xl overflow-hidden">
-                                <div class="bg-slate-50 px-6 py-4 font-bold text-slate-700 border-b flex items-center">
-                                    <span class="bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-secondary mr-3">1</span>
-                                    Starting Material Specification
-                                </div>
-                                <div class="p-6 grid md:grid-cols-2 gap-4 bg-white">
-                                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Vendor & Purity</label><input type="text" class="w-full p-3 rounded-xl border border-slate-200 bg-slate-50" placeholder="e.g., Sigma, >98%"></div>
-                                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Storage Condition</label><input type="text" class="w-full p-3 rounded-xl border border-slate-200 bg-slate-50" placeholder="e.g., 2-8°C, dark"></div>
-                                </div>
-                            </div>
-                            <div class="border border-slate-200 rounded-2xl overflow-hidden">
-                                <div class="bg-slate-50 px-6 py-4 font-bold text-slate-700 border-b flex items-center">
-                                    <span class="bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-secondary mr-3">2</span>
-                                    Impurity Profile Tracking
-                                </div>
-                                <div class="p-6 grid md:grid-cols-2 gap-4 bg-white">
-                                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Expected By-products</label><input type="text" class="w-full p-3 rounded-xl border border-slate-200 bg-slate-50" placeholder="구조 및 생성 원인 기재"></div>
-                                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Residual Solvent Limit</label><input type="text" class="w-full p-3 rounded-xl border border-slate-200 bg-slate-50" placeholder="ICH Guideline 기준 ppm"></div>
-                                </div>
-                            </div>
-                            <div class="border border-slate-200 rounded-2xl overflow-hidden">
-                                <div class="bg-slate-50 px-6 py-4 font-bold text-slate-700 border-b flex items-center">
-                                    <span class="bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-secondary mr-3">3</span>
-                                    Critical Process Parameters (CPP)
-                                </div>
-                                <div class="p-6 bg-white">
-                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-                                        <label class="flex items-center gap-3 p-3 border rounded-xl hover:bg-slate-50 transition"><input type="checkbox" class="w-5 h-5 accent-secondary"> <span class="text-sm font-medium">Temp. Control</span></label>
-                                        <label class="flex items-center gap-3 p-3 border rounded-xl hover:bg-slate-50 transition"><input type="checkbox" class="w-5 h-5 accent-secondary"> <span class="text-sm font-medium">Stirring Speed</span></label>
-                                        <label class="flex items-center gap-3 p-3 border rounded-xl hover:bg-slate-50 transition"><input type="checkbox" class="w-5 h-5 accent-secondary"> <span class="text-sm font-medium">Addition Rate</span></label>
-                                        <label class="flex items-center gap-3 p-3 border rounded-xl hover:bg-slate-50 transition"><input type="checkbox" class="w-5 h-5 accent-secondary"> <span class="text-sm font-medium">Reaction Time</span></label>
+                    <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+                        <!-- Left: CTD Module 3 Basic Checklist -->
+                        <div class="xl:col-span-1 space-y-6">
+                            <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm">
+                                <h3 class="text-xl font-black text-slate-800 mb-6"><i class="fa-solid fa-clipboard-check text-secondary mr-2"></i>CMC Module 3 Checklist</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                        <label class="block text-[10px] font-black text-slate-400 uppercase mb-2">1. Starting Material Spec</label>
+                                        <div class="space-y-2">
+                                            <input type="text" class="w-full p-2.5 rounded-xl border border-slate-200 text-xs" placeholder="Vendor & Purity (e.g., Sigma, >98%)">
+                                            <input type="text" class="w-full p-2.5 rounded-xl border border-slate-200 text-xs" placeholder="Storage (e.g., 2-8°C, dark)">
+                                        </div>
                                     </div>
-                                    <input type="text" class="w-full p-3 rounded-xl border border-slate-200 bg-slate-50" placeholder="Other CPPs Description...">
+                                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                        <label class="block text-[10px] font-black text-slate-400 uppercase mb-2">2. Critical Process Parameters (CPP)</label>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <label class="flex items-center gap-2 p-2 bg-white rounded-lg border border-slate-200 cursor-pointer"><input type="checkbox" class="accent-secondary"> <span class="text-[10px] font-bold">Temp. Control</span></label>
+                                            <label class="flex items-center gap-2 p-2 bg-white rounded-lg border border-slate-200 cursor-pointer"><input type="checkbox" class="accent-secondary"> <span class="text-[10px] font-bold">pH Range</span></label>
+                                            <label class="flex items-center gap-2 p-2 bg-white rounded-lg border border-slate-200 cursor-pointer"><input type="checkbox" class="accent-secondary"> <span class="text-[10px] font-bold">Addition Rate</span></label>
+                                            <label class="flex items-center gap-2 p-2 bg-white rounded-lg border border-slate-200 cursor-pointer"><input type="checkbox" class="accent-secondary"> <span class="text-[10px] font-bold">Stirring Speed</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-900 text-white p-6 rounded-3xl shadow-xl">
+                                <h4 class="font-bold text-lg mb-3 text-pink-400 flex items-center"><i class="fa-solid fa-file-export mr-2"></i>CTD Writing Tip</h4>
+                                <p class="text-xs leading-relaxed text-slate-400">
+                                    <b>3.2.S.2.6 (공정 개발 요약):</b> 우측의 Fate Mapping 데이터를 기반으로 불순물이 각 공정 단계에서 어떻게 제거(Purge)되는지 서술하십시오. IPC 기준 설정의 근거는 품질 관리 전략의 핵심입니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right: Advanced CMC Workboard -->
+                        <div class="xl:col-span-2 space-y-6">
+                            <!-- Impurity Fate & Purge Mapping -->
+                            <div class="bg-white p-6 md:p-8 rounded-[2.5rem] border border-slate-200 shadow-sm">
+                                <div class="flex justify-between items-center mb-6">
+                                    <div>
+                                        <h3 class="text-2xl font-black text-slate-800"><i class="fa-solid fa-route text-secondary mr-3"></i>Impurity Fate & Purge Mapping</h3>
+                                        <p class="text-sm text-slate-400 mt-1 font-medium">공정 중 발생하는 불순물의 제거 경로를 추적합니다.</p>
+                                    </div>
+                                    <button onclick="addImpurityRow()" class="bg-slate-100 text-slate-600 px-4 py-2 rounded-xl text-xs font-black hover:bg-secondary hover:text-white transition">항목 추가</button>
+                                </div>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-xs text-center border-separate border-spacing-y-2">
+                                        <thead>
+                                            <tr class="text-[10px] font-black text-slate-400 uppercase tracking-widest px-4">
+                                                <th class="pb-2 text-left pl-4">Impurity ID / Source</th>
+                                                <th class="pb-2">Stage Formed</th>
+                                                <th class="pb-2">Purge Mechanism</th>
+                                                <th class="pb-2">Target Limit (%)</th>
+                                                <th class="pb-2 text-right pr-4">Fate Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="impurity-fate-body">
+                                            <tr class="bg-slate-50/50 rounded-xl group transition-all">
+                                                <td class="py-3 pl-4 rounded-l-xl text-left font-bold">Impurity A (Reg-Starting Mat.)</td>
+                                                <td>Stage 1</td>
+                                                <td><input type="text" class="bg-transparent border-b border-slate-200 outline-none w-full text-center" placeholder="Crystallization"></td>
+                                                <td><input type="text" class="bg-transparent border-b border-slate-200 outline-none w-16 text-center" value="< 0.10"></td>
+                                                <td class="pr-4 rounded-r-xl text-right font-black text-emerald-500 uppercase tracking-tighter text-[10px]">Purged</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- IPC (In-Process Control) Dashboard -->
+                            <div class="bg-white p-6 md:p-8 rounded-[2.5rem] border border-slate-200 shadow-sm">
+                                <div class="flex justify-between items-center mb-6">
+                                    <div>
+                                        <h3 class="text-2xl font-black text-slate-800"><i class="fa-solid fa-gauge text-secondary mr-3"></i>IPC Dashboard</h3>
+                                        <p class="text-sm text-slate-400 mt-1 font-medium">반응 종결 및 품질 확인 지점(In-Process Control)을 관리합니다.</p>
+                                    </div>
+                                    <button onclick="addIpcRow()" class="bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-black hover:bg-slate-700 transition shadow-md">IPC 추가</button>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="ipc-container">
+                                    <div class="p-5 rounded-3xl border border-indigo-100 bg-indigo-50/30 flex flex-col relative overflow-hidden group">
+                                        <div class="absolute top-0 right-0 p-3 opacity-5"><i class="fa-solid fa-vial text-4xl"></i></div>
+                                        <div class="flex justify-between items-start mb-3">
+                                            <span class="text-[10px] font-black text-indigo-500 uppercase tracking-widest">Reaction Completion</span>
+                                            <span class="text-[9px] bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full font-bold">HPLC/TLC</span>
+                                        </div>
+                                        <h4 class="font-bold text-slate-800 mb-1">SM Consumption Check</h4>
+                                        <div class="mt-auto pt-3 border-t border-indigo-100/50 flex justify-between items-center">
+                                            <span class="text-[11px] text-slate-500 font-bold">Limit: SM ≤ 1.0%</span>
+                                            <button class="text-[10px] font-black text-indigo-600 hover:underline">SET LIMIT</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -11244,6 +11304,13 @@
                     if(document.activeElement === amtInput) eqInput.value = (currentMmol / refMmol).toFixed(2);
                 }
             });
+
+            // Sync with Quench Calculator (v127)
+            const firstMmolEl = document.querySelector('.row-mmol');
+            const quenchMmolInput = document.getElementById('quench-mmol-input');
+            if (firstMmolEl && quenchMmolInput && !document.activeElement.id.includes('quench')) {
+                quenchMmolInput.value = parseFloat(firstMmolEl.value) || "";
+            }
         }
 
         let lastGeneratedData = {};
@@ -13245,6 +13312,7 @@
                     // Fallback to text input if no thumbnail selected
                     const rangeStr = document.getElementById('pdf-split-range').value;
                     if (!rangeStr) { alert("분할할 페이지를 선택하거나 범위를 입력하세요."); return; }
+                    config.indices = parsePageRange(rangeStr, pageStates.length);
                 }
             } else if (currentPdfAction === 'PDF 회전') {
                 config.rotations = pageStates.map(s => s.rotation);
@@ -13314,7 +13382,7 @@
                     const wb = XLSX.utils.book_new();
                     const ws = XLSX.utils.aoa_to_sheet(allRows);
                     XLSX.utils.book_append_sheet(wb, ws, "Extracted Data");
-                    XLSX.writeFile(wb, `[Toolkit_v126]_Excel_결과.xlsx`);
+                    XLSX.writeFile(wb, `[Toolkit_v128]_Excel_결과.xlsx`);
                 } 
                 else if (action === 'PDF → Word') {
                     const file = files[0];
@@ -13347,7 +13415,7 @@
                     const blob = new Blob(['\ufeff', wordHtml], { type: 'application/msword' });
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(blob);
-                    link.download = `[Toolkit_v126]_Word_결과.doc`;
+                    link.download = `[Toolkit_v128]_Word_결과.doc`;
                     link.click();
                 }
                 else {
@@ -13405,7 +13473,7 @@
                     const blob = new Blob([pdfBytes], { type: 'application/pdf' });
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(blob);
-                    link.download = `[Toolkit_v126]_${action}_결과.pdf`;
+                    link.download = `[Toolkit_v128]_${action}_결과.pdf`;
                     link.click();
                 }
 
@@ -13918,32 +13986,90 @@
         }
 function generateQuenchGuide() {
     const select = document.getElementById('quench-reagent-select');
+    const mmolInput = document.getElementById('quench-mmol-input');
     const display = document.getElementById('quench-guide-display');
     const val = select.value;
+    let mmol = parseFloat(mmolInput.value);
+
+    // Try to sync with SM mmol if empty
+    if (isNaN(mmol) || mmol <= 0) {
+        const smMmolCell = document.querySelector('#stoichiometry-table tbody tr:first-child td:nth-child(7)'); // 7th col is mmol
+        if (smMmolCell) {
+            mmol = parseFloat(smMmolCell.innerText) || 0;
+            if (mmol > 0) mmolInput.value = mmol.toFixed(2);
+        }
+    }
 
     if (!val) {
-        display.innerHTML = '<p class="text-xs text-slate-400">위험 시약을 선택하고 가이드 생성 버튼을 누르세요.</p>';
+        display.innerHTML = '<div class="flex flex-col items-center justify-center h-full py-4 text-center"><i class="fa-solid fa-calculator text-slate-300 text-3xl mb-2"></i><p class="text-xs text-slate-400">위험 시약과 스케일(mmol)을 확인하고 버튼을 누르세요.</p></div>';
         return;
     }
 
-    // Using the existing quenchProtocols object defined around L2614
-    let steps = quenchProtocols[val];
+    let steps = quenchProtocols[val] || [];
+    let calculationText = "";
 
-    // For other reagents we added in the HTML select but not in quenchProtocols originally
-    if (val === 'tfa' && !steps) steps = ["반응 온도를 0°C로 낮춥니다.", "Sat. NaHCO3 수용액을 pH 7-8이 될 때까지 극도로 천천히 적가합니다 (CO2 가스 대량 발생 주의).", "분별 깔때기로 유기층을 분리합니다."];
-    if (val === 'pdc' && !steps) steps = ["Celite pad를 통해 현탁액을 여과합니다.", "Filter cake가 마르지 않도록 주의하며 용매(Ethyl acetate 또는 Methanol)로 씻어줍니다.", "젖은 Filter cake는 즉시 물에 적신 후 폐기 용기에 보관합니다 (건조 시 자연 발화 위험)."];
-    if (val === 'sodium' && !steps) steps = ["반응 후 남은 금속 Na/K 덩어리를 t-Butanol 또는 Isopropanol에 조각내어 천천히 투입합니다.", "수소 가스 발생이 멈출 때까지 기다립니다.", "Methanol을 가한 후 마지막에 물을 첨가하여 완전히 분해합니다."];
-    if (val === 'mg' && !steps) steps = ["반응 혼합물을 0°C로 냉각합니다.", "Sat. NH4Cl 수용액을 천천히 적가하여 Quenching 합니다 (1M HCl 사용 가능하나 산에 민감한 화합물 주의).", "침전물이 생기면 10% 구연산 또는 약간의 산을 가하여 녹입니다."];
+    // Calculation logic based on mmol
+    if (mmol > 0) {
+        if (val === 'nbuli') {
+            const ipaVol = (mmol * 1.5 * 60.1) / (0.786 * 1000); 
+            calculationText = `<div class="mt-4 p-3 bg-secondary/5 rounded-xl border border-secondary/20"><p class="text-[10px] font-black text-secondary uppercase mb-1">Theoretical Quench Amount (${mmol.toFixed(2)} mmol scale)</p><p class="text-sm font-bold text-slate-800">IPA: 약 <span class="text-secondary">${ipaVol.toFixed(2)} mL</span> (1.5 eq) 투입 후, 물 <span class="text-secondary">${(mmol * 0.1).toFixed(1)} mL</span> 이상 추가.</p></div>`;
+        } else if (val === 'nah') {
+            const ipaVol = (mmol * 1.5 * 60.1) / (0.786 * 1000);
+            calculationText = `<div class="mt-4 p-3 bg-secondary/5 rounded-xl border border-secondary/20"><p class="text-[10px] font-black text-secondary uppercase mb-1">Theoretical Quench Amount (${mmol.toFixed(2)} mmol scale)</p><p class="text-sm font-bold text-slate-800">IPA: 약 <span class="text-secondary">${ipaVol.toFixed(2)} mL</span> (1.5 eq) 천천히 투입 후, 가스 발생 멈추면 물 투입.</p></div>`;
+        } else if (val === 'liah4') {
+            const lahWeight = (mmol * 37.95) / 1000; 
+            calculationText = `<div class="mt-4 p-3 bg-secondary/5 rounded-xl border border-secondary/20"><p class="text-[10px] font-black text-secondary uppercase mb-1">Theoretical Quench Amount (${mmol.toFixed(2)} mmol scale / ${lahWeight.toFixed(2)} g)</p><p class="text-sm font-bold text-slate-800">Fieser Method: 물 ${lahWeight.toFixed(2)} mL → 15% NaOH ${lahWeight.toFixed(2)} mL → 물 ${(lahWeight*3).toFixed(2)} mL 순차 투입.</p></div>`;
+        } else if (val === 'tfa') {
+            calculationText = `<div class="mt-4 p-3 bg-secondary/5 rounded-xl border border-secondary/20"><p class="text-[10px] font-black text-secondary uppercase mb-1">Theoretical Quench Amount (${mmol.toFixed(2)} mmol scale)</p><p class="text-sm font-bold text-slate-800">Sat. NaHCO3: 약 <span class="text-secondary">${(mmol * 1.5).toFixed(1)} mL</span> 이상 필요 (pH 확인 필수).</p></div>`;
+        }
+    }
 
-    if (!steps) steps = ["선택한 시약에 대한 구체적인 Quench 가이드가 없습니다. MSDS를 참조하십시오."];
+    if (val === 'tfa' && steps.length === 0) steps = ["반응 온도를 0°C로 낮춥니다.", "Sat. NaHCO3 수용액을 pH 7-8이 될 때까지 극도로 천천히 적가합니다 (CO2 가스 대량 발생 주의).", "분별 깔때기로 유기층을 분리합니다."];
+    if (val === 'pdc' && steps.length === 0) steps = ["Celite pad를 통해 현탁액을 여과합니다.", "Filter cake가 마르지 않도록 주의하며 용매(Ethyl acetate 또는 Methanol)로 씻어줍니다.", "젖은 Filter cake는 즉시 물에 적신 후 폐기 용기에 보관합니다 (건조 시 자연 발화 위험)."];
+    if (val === 'sodium' && steps.length === 0) steps = ["반응 후 남은 금속 Na/K 덩어리를 t-Butanol 또는 Isopropanol에 조각내어 천천히 투입합니다.", "수소 가스 발생이 멈출 때까지 기다립니다.", "Methanol을 가한 후 마지막에 물을 첨가하여 완전히 분해합니다."];
+    if (val === 'mg' && steps.length === 0) steps = ["반응 혼합물을 0°C로 냉각합니다.", "Sat. NH4Cl 수용액을 천천히 적가하여 Quenching 합니다 (1M HCl 사용 가능하나 산에 민감한 화합물 주의).", "침전물이 생기면 10% 구연산 또는 약간의 산을 가하여 녹입니다."];
 
-    let html = `<div class="text-left w-full"><h5 class="font-bold text-sm text-secondary mb-2"><i class="fa-solid fa-clipboard-check mr-1"></i>안전 Quench 절차 (${select.options[select.selectedIndex].text})</h5><ol class="list-decimal list-inside space-y-2 text-sm text-slate-700">`;
+    if (steps.length === 0) steps = ["선택한 시약에 대한 구체적인 Quench 가이드가 없습니다. MSDS를 참조하십시오."];
+
+    let html = `<div class="text-left w-full fade-in"><h5 class="font-bold text-sm text-secondary mb-3 flex items-center"><i class="fa-solid fa-shield-halved mr-2"></i>Safety Quench Protocol: ${select.options[select.selectedIndex].text}</h5><ol class="list-decimal list-inside space-y-2 text-sm text-slate-700">`;
     steps.forEach(step => {
         html += `<li class="border-b border-dashed border-slate-200 pb-1">${step}</li>`;
     });
-    html += `</ol></div>`;
-
+    html += `</ol>${calculationText}</div>`;
+    
     display.innerHTML = html;
+}
+
+function addImpurityRow() {
+    const body = document.getElementById('impurity-fate-body');
+    const tr = document.createElement('tr');
+    tr.className = "bg-slate-50/50 rounded-xl group transition-all";
+    tr.innerHTML = `
+        <td class="py-3 pl-4 rounded-l-xl text-left font-bold"><input type="text" class="bg-transparent border-b border-slate-200 outline-none w-full" placeholder="New Impurity"></td>
+        <td><input type="text" class="bg-transparent border-b border-slate-200 outline-none w-full text-center" placeholder="Stage X"></td>
+        <td><input type="text" class="bg-transparent border-b border-slate-200 outline-none w-full text-center" placeholder="Mechanism"></td>
+        <td><input type="text" class="bg-transparent border-b border-slate-200 outline-none w-16 text-center" placeholder="< 0.15"></td>
+        <td class="pr-4 rounded-r-xl text-right font-black text-slate-400 uppercase tracking-tighter text-[10px]"><button onclick="this.closest('tr').remove()" class="text-slate-300 hover:text-red-500 transition-colors"><i class="fa-solid fa-trash-can"></i></button></td>
+    `;
+    body.appendChild(tr);
+}
+
+function addIpcRow() {
+    const container = document.getElementById('ipc-container');
+    const div = document.createElement('div');
+    div.className = "p-5 rounded-3xl border border-slate-200 bg-white flex flex-col relative overflow-hidden group hover:border-secondary transition-all shadow-sm";
+    div.innerHTML = `
+        <div class="flex justify-between items-start mb-3">
+            <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">New Process Control</span>
+            <input type="text" class="text-[9px] bg-slate-100 px-2 py-0.5 rounded-full font-bold outline-none w-16" placeholder="Method">
+        </div>
+        <input type="text" class="font-bold text-slate-800 mb-1 outline-none border-b border-transparent focus:border-slate-200 w-full" placeholder="IPC Point Name">
+        <div class="mt-auto pt-3 border-t border-slate-100 flex justify-between items-center">
+            <input type="text" class="text-[11px] text-slate-500 font-bold outline-none w-full" placeholder="Limit: e.g., ≤ 0.5%">
+            <button onclick="this.closest('.p-5').remove()" class="text-slate-300 hover:text-red-500 ml-2 transition-colors"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    `;
+    container.appendChild(div);
 }
 
 function updateProcessRiskScore() {
