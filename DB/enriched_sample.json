@@ -1,0 +1,249 @@
+{
+  "cro3": {
+    "name": "Chromium(VI) oxide",
+    "cas": "1333-82-0",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "N95/P100 Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Fatal",
+      "Carcinogen",
+      "Genetic Defect"
+    ],
+    "storage": "냉암소 보관. 가연물 격리. 잠금 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "99.994",
+    "formula": "CrO3",
+    "iupac": "trioxochromium",
+    "tpsa": 51.2
+  },
+  "h2o2": {
+    "name": "hydrogen peroxide",
+    "cas": "7722-84-1",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반관리, 관리대상유해물질, 작업환경측정대상",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Corrosive",
+      "Irritant"
+    ],
+    "storage": "서늘한 곳 보관. 빛 차단. 전용 용기 사용.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "34.015",
+    "formula": "H2O2",
+    "iupac": "hydrogen peroxide",
+    "logp": -0.9,
+    "tpsa": 40.5
+  },
+  "naio4": {
+    "name": "Sodium periodate (NaIO4)",
+    "cas": "7790-28-5",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Oxidizer",
+      "Irritant",
+      "Environmental Hazard"
+    ],
+    "storage": "산화성 보관장. 환원제 및 가연물과 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "213.892",
+    "formula": "INaO4",
+    "iupac": "sodium periodate",
+    "tpsa": 74.3
+  },
+  "nan3": {
+    "name": "Sodium Azide",
+    "cas": "26628-22-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Double Nitrile Gloves",
+      "Goggles",
+      "Face Shield"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Fatal",
+      "Toxic Gas with Acids"
+    ],
+    "storage": "냉암소 보관. 산 및 금속 격리. 잠금 보관.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "65.010",
+    "formula": "N3Na",
+    "iupac": "sodium azide",
+    "tpsa": 3
+  },
+  "triphosgene": {
+    "name": "Triphosgen, 98%",
+    "cas": "32315-10-9",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Neoprene Gloves",
+      "Goggles",
+      "Respirator / Fume Hood 필수"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Toxic",
+      "Corrosive",
+      "Fatal Inhalation"
+    ],
+    "storage": "냉장 보관 (2-8℃). 수분 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "296.7",
+    "formula": "C3Cl6O3",
+    "iupac": "bis(trichloromethyl) carbonate",
+    "logp": 4.4,
+    "tpsa": 35.5
+  },
+  "hydrazine": {
+    "name": "Hydrazine monohydrate",
+    "cas": "7803-57-8",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Butyl/Viton Gloves",
+      "Face Shield",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Flammable",
+      "Toxic",
+      "Corrosive",
+      "Carcinogen"
+    ],
+    "storage": "냉암소 보관. 산화제 및 산 격리.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "50.061",
+    "formula": "H6N2O",
+    "iupac": "hydrazine;hydrate",
+    "tpsa": 53
+  },
+  "nabh3cn": {
+    "name": "Sodium Cyanoborohydride",
+    "cas": "25895-60-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Fume Hood"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Fatal",
+      "Water Reactive",
+      "Flammable Solid"
+    ],
+    "storage": "Ar/N2 밀봉 보관. 수분/산 절대 차단.",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "62.84",
+    "formula": "CH3BNNa",
+    "iupac": "sodium cyanoboranuide",
+    "tpsa": 23.8
+  },
+  "stab": {
+    "name": "Sodium triacetoxyborohydride, 95%",
+    "cas": "56553-60-7",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Water Reactive (수소가스 발생)",
+      "Irritant"
+    ],
+    "storage": "건조한 상온 (수분에 취약). / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "211.94",
+    "formula": "C6H10BNaO6",
+    "iupac": "sodium triacetyloxyboranuide",
+    "tpsa": 78.9
+  },
+  "koac": {
+    "name": "Potassium acetate (KOAc)",
+    "cas": "127-08-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Low Hazard"
+    ],
+    "storage": "상온 보관 (조해성 강함, 밀폐).",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "98.14",
+    "formula": "C2H3KO2",
+    "iupac": "potassium acetate",
+    "tpsa": 40.1
+  },
+  "k3po4": {
+    "name": "Potassium phosphate tribasic",
+    "cas": "7778-53-2",
+    "waste": "일반 유기폐액",
+    "ppe": [
+      "Nitrile Gloves",
+      "Goggles",
+      "Dust Mask"
+    ],
+    "regulation": {
+      "sanan": "일반관리",
+      "wiheom": "비위험물 (확인필요)"
+    },
+    "hazards": [
+      "Corrosive (눈 손상)",
+      "Irritant"
+    ],
+    "storage": "상온 보관 (흡습성 매우 강함). / RT",
+    "scale_up_alert": "대량 사용 시 발열 및 안전 사고 주의",
+    "mw": "212.266",
+    "formula": "K3O4P",
+    "iupac": "tripotassium;phosphate",
+    "tpsa": 86.3
+  }
+}

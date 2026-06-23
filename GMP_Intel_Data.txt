@@ -1,0 +1,52 @@
+[GMP 지식 데이터 통합본 - Word 보고서 및 DB용]
+
+1. 데이터 완전성 (Data Integrity - ALCOA+)
+- 핵심 원칙: Attributable, Legible, Contemporaneous, Original, Accurate
+- 실무 팁: 수정액 사용 금지, 행위 즉시 기록, 개인 계정 사용 원칙.
+
+2. 세척 밸리데이션 (Cleaning Validation)
+- 핵심 지표: MACO (최대 허용 잔류량), Worst-case 산정, TOC/전도도 분석.
+- 실무 팁: Dirty Hold Time(DHT) 및 Clean Hold Time(CHT) 준수. Swab/Rinse 샘플링 전략.
+
+3. 공정 밸리데이션 (Process Validation)
+- 접근 방식: Stage 1(설계), Stage 2(적격성 평가), Stage 3(지속적 공정 검증).
+- 핵심 인자: CQA(핵심 품질 특성)와 CPP(핵심 공정 변수)의 상관관계 증명.
+
+4. 일탈 및 변경관리 (Deviation & Change Control)
+- 일탈 등급: Critical, Major, Minor 분류 및 RCA(근본 원인 분석) 수행.
+- 변경관리: 영향 평가(Impact Assessment) 및 동질성 평가 필수.
+
+5. 적격성 평가 (Qualification - IQ/OQ/PQ)
+- 단계: DQ(설계), IQ(설치), OQ(운전), PQ(성능).
+- 실무 팁: 단계별 순차적 진행 및 앞 단계 보고서 승인 후 다음 단계 착수.
+
+--------------------------------------------------
+[JSON 데이터 구조 - 툴킷 바로 적용용]
+
+const gmpKnowledgeDB = {
+  "data_integrity": {
+    "title": "데이터 완전성 (ALCOA+)",
+    "core": ["Attributable", "Legible", "Contemporaneous", "Original", "Accurate"],
+    "tips": "수기 기록 시 한 줄 긋고 서명/날짜 기록 필수. 백데이터 작성 금지."
+  },
+  "cleaning_validation": {
+    "title": "세척 밸리데이션",
+    "concepts": ["MACO", "Worst-case", "THT/DHT"],
+    "tips": "세척이 가장 어려운 Dead-leg 지점 샘플링 확인 필수."
+  },
+  "process_validation": {
+    "title": "공정 밸리데이션",
+    "stages": ["Process Design", "Process Qualification", "Continued Verification"],
+    "key_params": ["CQA (품질결과)", "CPP (공정원인)"]
+  },
+  "deviation_change": {
+    "title": "일탈 및 변경관리",
+    "types": ["Critical/Major/Minor", "Impact Assessment"],
+    "tips": "변경 사항 발생 시 사전에 QA 승인 후 진행."
+  },
+  "qualification": {
+    "title": "적격성 평가 (IQ/OQ/PQ)",
+    "flow": ["DQ -> IQ -> OQ -> PQ"],
+    "tips": "장비 이동/주요 부품 교체 시 재적격성 평가 검토 필요."
+  }
+};
