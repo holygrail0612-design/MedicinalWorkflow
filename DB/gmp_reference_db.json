@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "source_pdf": "2601021 퓨쳐켐 생산사업3팀 GMP 교육자료.pdf",
+    "summary": "퓨쳐켐 연구소 및 생산소에서 활용되는 GMP 제조공정, 데이터 완전성, 세척 검증 및 설비 적격성 평가 지침의 핵심 실무 데이터베이스"
+  },
+  "sections": [
+    {
+      "category": "data_integrity",
+      "title": "데이터 완전성 (Data Integrity) 및 문서 관리",
+      "guideline": "1. 모든 GMP 시험 및 제조 기록은 contemporaneous(즉시성)에 의거하여 작업 즉시 자필 또는 시스템에 기록되어야 합니다.\n2. 전자기록의 경우 수정 이력이 Audit Trail(감사추적) 기능에 의해 자동으로 기록되어야 하며 임의 삭제가 불가능해야 합니다.\n3. 수기 문서에 오류가 있을 시, 수정 테이프 사용을 엄격히 금하며 single line(한 줄 긋기) 후 수정 사유, 일자 및 서명을 기록해야 합니다.",
+      "alcoa_mapping": "Attributable(출처 확인 가능), Legible(판독 가능), Contemporaneous(동시성), Original(원본성), Accurate(정확성)"
+    },
+    {
+      "category": "cleaning_validation",
+      "title": "세척 밸리데이션 (Cleaning Validation) 및 교차 오염 방지",
+      "guideline": "1. 전차 생산 품목의 잔류물이 후차 품목에 미치는 유해성을 차단하기 위해 세척 공정 검증을 시행합니다.\n2. 허용 기준치는 독성학적 일일 허용 노출량(ADE)에 기반한 MACO(최대 허용 잔류량)로 결정하며, 통상적으로 10 ppm 기준 및 최저 치료 투여량의 1/1000 기준 중 가장 엄격한 값을 적용합니다.\n3. 스왑(Swab) 검체 채취 시 장비의 Worst-case(세척이 가장 어려운 부위: 밸브, 배관 굴곡부 등)를 포함하여 10cm x 10cm 구역을 균일하게 채취하며, 회수율(Recovery Rate) 테스트 결과를 반영하여 보정합니다.",
+      "parameter_info": "NOEL(무작용량), ADE/PDE(일일허용노출량), Swab Area(스왑 면적), Recovery Factor(회수율 계수)"
+    },
+    {
+      "category": "process_validation",
+      "title": "공정 밸리데이션 (Process Validation)",
+      "guideline": "1. 상업 생산 이전에 연속 3개 배치의 생산 공정이 설계된 파라미터 내에서 일관되게 고품질 의약품을 생산함을 입증합니다.\n2. 공정 매개변수(CPP: 임계공정변수)로 반응 온도, 교반 속도, 시약 투입 속도 및 반응 시간을 실시간 모니터링하고 기록해야 합니다.\n3. 적격성 평가 완료 후 공정 밸리데이션(PV) 프로토콜을 승인받아 본 생산을 전개합니다.",
+      "CPP_examples": "반응 온도 편차 (+/- 2도 이내), 교반 속도 (RPM), 진공도 (mbar)"
+    },
+    {
+      "category": "deviation_change",
+      "title": "일탈 (Deviation) 및 변경 관리 (Change Control) 절차",
+      "guideline": "1. 설정된 공정 규격이나 승인된 SOP(표준작업절차서)에서 벗어난 모든 사태는 즉각 '일탈'로 보고되어야 하며, 발생 24시간 이내에 보고서를 상신해야 합니다.\n2. 일탈의 중대성에 따라 Minor / Major / Critical 등급으로 분류하고 원인 분석(Root Cause Analysis) 및 CAPA(시정 및 예방 조치)를 도출해야 합니다.\n3. 장비의 부품 변경, SOP 수정, 신규 원료 공급사 도입 시에는 변경 관리(Change Control) 절차에 의거하여 사전에 위험 평가(Risk Assessment)와 승인을 완료한 뒤 적용해야 합니다.",
+      "RCA_methods": "5-Why 분석, 피시본(Fishbone) 다이어그램"
+    },
+    {
+      "category": "qualification",
+      "title": "설비 및 기기 적격성 평가 (Qualification)",
+      "guideline": "1. GMP 설비는 설계 적격성 평가(DQ), 설치 적격성 평가(IQ), 운전 적격성 평가(OQ), 성능 적격성 평가(PQ)의 4단계를 순서대로 수행하여 검증합니다.\n2. IQ 단계에서는 배관 라인, 전기 결선, 예비 부품 리스트 및 교정(Calibration) 성적서를 확인합니다.\n3. OQ 단계에서는 장비의 무부하 운전 시 온도 제어, 진공 압력 도달 여부 등 물리적 기능이 설계 범위 내에서 안정되게 작동하는지 검사합니다.\n4. PQ 단계에서는 실제 원료 또는 모사 물질을 사용하여 설계된 생산 효율 및 품질 목표가 연속적으로 달성되는지 최종 확인합니다.",
+      "calibration_standard": "계측기 국가 공인 기관 교정 필증 부착 의무"
+    }
+  ]
+}

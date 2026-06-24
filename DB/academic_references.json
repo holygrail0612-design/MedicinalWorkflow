@@ -1,0 +1,77 @@
+{
+  "medchem": {
+    "title": "의약화학 및 설계 (Medicinal Chemistry & Design)",
+    "references": [
+      {
+        "source": "RCSB Protein Data Bank (PDB)",
+        "type": "Global Data Standard",
+        "description": "전 세계 구조생물학 연구의 공식 마스터 아카이브인 RCSB PDB의 REST API 및 3D 좌표 데이터(.pdb)를 실시간 연동하여 구조적 정확성을 보장합니다."
+      },
+      {
+        "source": "PubChem (NCBI/NIH)",
+        "type": "Chemical Informatics Standard",
+        "description": "미국 국립보건원(NIH) 산하 NCBI에서 제공하는 공식 화학 정보 데이터베이스 PUG REST API를 연동하여 IUPAC Name, MW, LogP, TPSA 등의 물성치를 가져옵니다."
+      },
+      {
+        "source": "Lipinski's Rule of 5 (J. Pharm. Toxicol. Methods, 1997)",
+        "type": "Medicinal Chemistry Filter",
+        "description": "경구용 약물의 흡수성 및 생체이용률을 예측하는 Lipinski의 5대 규칙(분자량 500 이하, LogP 5 이하, 수소결합 공여체 5 이하, 수용체 10 이하)을 필터링 기준으로 삼습니다."
+      }
+    ]
+  },
+  "process": {
+    "title": "공정 개발 및 스케일업 (Process & CMC)",
+    "references": [
+      {
+        "source": "ICH Q3C(R8) Guideline for Residual Solvents",
+        "type": "Residual Solvents Regulation",
+        "description": "국제의약품규제조화위원회(ICH)의 잔류용매 가이드라인에 따른 독성 한계값(Class 1, Class 2, Class 3)을 기준으로 공정 내 허용 농도를 판정합니다."
+      },
+      {
+        "source": "EMA Cleaning Validation Guideline (ADE/PDE)",
+        "type": "GMP Safety Exposure Limit",
+        "description": "유럽의약품청(EMA)의 보건 목적의 노출 한계(PDE/ADE) 산출 공식에 따라, 전차 잔류 성분의 무작용량(NOEL) 및 안전 계수(F1~F5)를 반영해 교차 오염 방지 기준을 산정합니다."
+      },
+      {
+        "source": "FDA Cleaning Validation Guidance & ISPE Guide",
+        "type": "GMP Cleaning Validation Standard",
+        "description": "미국 FDA의 세척 밸리데이션 검증 가이드 및 국제제약공학회(ISPE) Baseline Guide에 따라 장비 잔류 허용 한계인 MACO(최대 허용 잔류량)를 계산합니다."
+      },
+      {
+        "source": "ICH Q3A(R2) & ICH Q2(R1)",
+        "type": "Impurity & Method Validation",
+        "description": "신약 활성성분의 유연물질 규정 및 분석법 밸리데이션 지침을 충족하여 HPLC의 RRT(상대유지시간) 분석과 피크 면적 정량을 관리합니다."
+      }
+    ]
+  },
+  "knowledge": {
+    "title": "지식 허브 (Knowledge Hub)",
+    "references": [
+      {
+        "source": "Gottlieb et al., J. Org. Chem., 1997",
+        "type": "NMR Chemical Shift Guide",
+        "description": "유기화학 불순물의 1H 및 13C NMR 시프트 값 판정을 위해 전 세계적으로 공인된 Gottlieb의 NMR Impurity shifts 논문 데이터를 내장하고 있습니다."
+      },
+      {
+        "source": "Greene's Protective Groups in Organic Synthesis",
+        "type": "Protecting Group Authority",
+        "description": "유기합성의 대표적 권위서인 Greene의 보호기 서적에 기재된 화학적 안정성 조건 및 탈보호 메커니즘을 매핑했습니다."
+      }
+    ]
+  },
+  "ehs": {
+    "title": "EHS 및 안전 (Environment, Health & Safety)",
+    "references": [
+      {
+        "source": "UN GHS Standard",
+        "type": "Chemical Classification System",
+        "description": "유엔 화학물질 분류 표시 표준 규격에 부합하게 그림문자(Pictograms), 신호어, 유해성(H-code), 예방조치(P-code) 정보를 출력합니다."
+      },
+      {
+        "source": "대한민국 위험물안전관리법 시행규칙 [별표 18]",
+        "type": "National Safety Regulation",
+        "description": "소방청 고시 위험물 등급별 혼재 금지 기준에 부합하여 반응 위험성을 1차 사전 필터링합니다."
+      }
+    ]
+  }
+}
