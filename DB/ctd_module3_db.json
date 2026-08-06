@@ -1,0 +1,63 @@
+{
+  "module3_s": {
+    "3.2.S.1": {
+      "title": "일반 정보 (General Information)",
+      "subsections": {
+        "3.2.S.1.1": {
+          "title": "명명법 (Nomenclature)",
+          "keywords": ["chemical name", "iupac", "inn", "cas name", "cas no", "cas number", "명명법", "화학명", "일반명", "laboratory code", "compendial name"]
+        },
+        "3.2.S.1.2": {
+          "title": "구조 (Structure)",
+          "keywords": ["structure", "structural formula", "molecular formula", "molecular weight", "mw", "chirality", "stereochemistry", "입체화학", "구조식", "분자식", "분자량", "isomeric"]
+        },
+        "3.2.S.1.3": {
+          "title": "일반적 성질 (General Properties)",
+          "keywords": ["appearance", "color", "physical state", "solid", "liquid", "powder", "solubility", "hygroscopicity", "melting point", "boiling point", "polymorphism", "pka", "ph", "partition coefficient", "성상", "용해도", "흡습성", "녹는점", "다형성", "white to off-white", "characteristics", "properties"]
+        }
+      }
+    },
+    "3.2.S.2": {
+      "title": "제조 (Manufacture)",
+      "subsections": {
+        "3.2.S.2.1": {
+          "title": "제조원 (Manufacturer(s))",
+          "keywords": ["manufacturer", "site", "address", "facility", "contact", "제조원", "제조소", "주소", "생산지"]
+        },
+        "3.2.S.2.2": {
+          "title": "제조공정 및 관리 (Description of Manufacturing Process and Process Controls)",
+          "keywords": ["flow diagram", "synthetic route", "reaction scheme", "yield", "stage", "step", "reaction conditions", "work-up", "crystallization", "drying", "제조공정", "합성경로", "수율", "반응조건", "결정화", "건조", "flow chart"]
+        },
+        "3.2.S.2.3": {
+          "title": "원료약품 관리 (Control of Materials)",
+          "keywords": ["starting material", "reagent", "solvent", "catalyst", "specifications", "purity", "grade", "원료약품", "출발물질", "시약", "용매", "촉매", "규격", "순도"]
+        },
+        "3.2.S.2.4": {
+          "title": "중요공정 및 중간체 관리 (Controls of Critical Steps and Intermediates)",
+          "keywords": ["critical process parameter", "cpp", "in-process control", "ipc", "temperature control", "stirring speed", "addition rate", "reaction time", "중요공정변수", "공정중관리", "온도 제어", "교반 속도", "적하 속도", "반응 시간", "limit", "acceptance criteria"]
+        },
+        "3.2.S.2.5": {
+          "title": "공정 밸리데이션 및 평가 (Process Validation and/or Evaluation)",
+          "keywords": ["process validation", "validation", "evaluation", "batch size", "scale-up", "commercial scale", "공정 밸리데이션", "평가", "배치 크기", "스케일업", "상업용 스케일"]
+        },
+        "3.2.S.2.6": {
+          "title": "제조공정 개발 (Manufacturing Process Development)",
+          "keywords": ["process development", "development history", "impurity fate", "purge", "optimization", "rationale", "공정 개발", "개발 이력", "불순물 추적", "최적화"]
+        }
+      }
+    },
+    "3.2.S.3": {
+      "title": "특성 (Characterization)",
+      "subsections": {
+        "3.2.S.3.1": {
+          "title": "구조 및 기타 특성 해명 (Elucidation of Structure and other Characteristics)",
+          "keywords": ["nmr", "1h-nmr", "13c-nmr", "ms", "mass spectrometry", "ir", "infrared", "uv", "xrd", "elemental analysis", "elucidation", "구조 해명", "분석 스펙트럼", "적외선", "자외선", "질량분석"]
+        },
+        "3.2.S.3.2": {
+          "title": "불순물 (Impurities)",
+          "keywords": ["impurity", "impurities", "degradation product", "residual solvent", "heavy metal", "inorganic impurity", "organic impurity", "genotoxic", "pqi", "불순물", "유연물질", "분해산물", "잔류용매", "중금속"]
+        }
+      }
+    }
+  }
+}
